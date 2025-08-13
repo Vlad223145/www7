@@ -230,23 +230,12 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               overflowX: "hidden",
               overflowY: "hidden",
               position: "relative",
-              height: '600px'
+              height: '600px',
+              isolation: 'isolate'
             }}
             onClick={handleImageClick}
-            onMouseEnter={(e) => {
-              e.preventDefault();
-              const hoverImg = e.currentTarget.querySelector('img:last-child') as HTMLImageElement;
-              if (hoverImg) {
-                hoverImg.style.opacity = '1';
-              }
-            }}
-            onMouseLeave={(e) => {
-              e.preventDefault();
-              const hoverImg = e.currentTarget.querySelector('img:last-child') as HTMLImageElement;
-              if (hoverImg) {
-                hoverImg.style.opacity = '0';
-              }
-            }}
+            onMouseEnter={(e) => handleImageHover(e, true)}
+            onMouseLeave={(e) => handleImageHover(e, false)}
           >
             <RawImg
               alt="product-image"
