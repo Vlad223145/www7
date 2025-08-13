@@ -182,10 +182,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   const product = productsData[id];
 
   return (
-    <div 
+    <div
       role="listitem"
-      style={{ perspective: '1000px', cursor: 'pointer' }}
-      onClick={handleCardClick}
+      style={{ perspective: '1000px' }}
     >
       <div 
         style={{
