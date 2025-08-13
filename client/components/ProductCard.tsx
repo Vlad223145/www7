@@ -220,7 +220,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       role="listitem"
       className="no-select"
       style={{
-        perspective: '1000px'
+        perspective: '1000px',
+        contain: 'layout',
+        isolation: 'isolate'
       }}
     >
       <div 
