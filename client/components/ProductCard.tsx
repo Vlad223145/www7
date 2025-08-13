@@ -155,7 +155,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   linkTo
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
-  const [showViewer, setShowViewer] = useState(false);
 
   const handleCardClick = (e: React.MouseEvent) => {
     e.preventDefault();
