@@ -184,7 +184,15 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   return (
     <div
       role="listitem"
-      style={{ perspective: '1000px' }}
+      style={{
+        perspective: '1000px',
+        userSelect: 'none',
+        WebkitTouchCallout: 'none',
+        WebkitUserSelect: 'none',
+        KhtmlUserSelect: 'none',
+        MozUserSelect: 'none',
+        msUserSelect: 'none'
+      }}
     >
       <div 
         style={{
