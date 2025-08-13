@@ -182,33 +182,11 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   };
 
   const handleImageHover = (e: React.MouseEvent, show: boolean) => {
-    e.preventDefault();
-    e.stopPropagation();
-
-    // КРИТИЧЕСКОЕ: Предотвращаем любое scrolling поведение
-    if (e.currentTarget instanceof HTMLElement) {
-      e.currentTarget.style.pointerEvents = 'auto';
-    }
-
     const hoverImg = e.currentTarget.querySelector('img:last-child') as HTMLImageElement;
     if (hoverImg) {
       hoverImg.style.opacity = show ? '1' : '0';
     }
   };
-
-  // Дополнительная защита от скролла
-  React.useEffect(() => {
-    const handleScroll = (e: Event) => {
-      // Предотвращаем нежелательный скролл во время взаимодействий
-      if (document.querySelector('[data-image-container]:hover')) {
-        e.preventDefault();
-        e.stopPropagation();
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: false });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const product = productsData[id];
 
