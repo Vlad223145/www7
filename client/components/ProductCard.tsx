@@ -171,13 +171,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   const handleImageClick = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-
-    // КРИТИЧЕСКОЕ: Дополнительная защита от скролла
-    if (e.nativeEvent) {
-      e.nativeEvent.preventDefault();
-      e.nativeEvent.stopImmediatePropagation();
-    }
-
     setIsFlipped(!isFlipped);
   };
 
