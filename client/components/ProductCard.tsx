@@ -213,19 +213,12 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           }}
         >
           <div
-            data-image-container
             style={{
-              borderBottomLeftRadius: "10px",
-              borderBottomRightRadius: "10px",
               borderRadius: "10px",
-              borderTopLeftRadius: "10px",
-              borderTopRightRadius: "10px",
               cursor: "pointer",
-              overflowX: "hidden",
-              overflowY: "hidden",
+              overflow: "hidden",
               position: "relative",
-              height: '600px',
-              isolation: 'isolate'
+              height: '600px'
             }}
             onClick={handleImageClick}
             onMouseEnter={(e) => handleImageHover(e, true)}
