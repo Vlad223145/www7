@@ -1,5 +1,19 @@
 import React, { useState } from 'react';
 import { RawImg } from './RawImg';
+import { ProductViewer } from './ProductViewer';
+
+interface Product {
+  id: string;
+  name: string;
+  image: string;
+  hoverImage: string;
+  description: string;
+  composition: string;
+  effects: string;
+  usage: string;
+  ingredients: string[];
+  features: string[];
+}
 
 interface ProductCardProps {
   id: string;
