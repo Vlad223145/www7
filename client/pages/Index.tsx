@@ -503,28 +503,36 @@ export default function Index() {
         </section>
         <section style={{ transformStyle: "preserve-3d", transform: "matrix(1, 0, 0, 1, 0, 0)" }}>
           <div style={{ borderColor: "rgb(255, 255, 255)", color: "rgb(255, 255, 255)", height: "880px", outlineColor: "rgb(255, 255, 255)", overflowX: "hidden", overflowY: "hidden", position: "relative", textDecorationColor: "rgb(255, 255, 255)", textEmphasisColor: "rgb(255, 255, 255)" }}>
-            <video autoPlay loop muted playsInline style={{ backgroundImage: 'url("https://cdn.prod.website-files.com/65f9834ec170577cb6334d0d/65fc00a6a51bbd61999de124_4838041_Washing_Hands_Clean_1280x720-poster-00001.jpg")', backgroundPosition: "50% 50%", backgroundSize: "cover", borderColor: "rgb(255, 255, 255)", bottom: "-100%", color: "rgb(255, 255, 255)", height: "100%", left: "-100%", marginBottom: "auto", marginLeft: "auto", marginRight: "auto", marginTop: "auto", objectFit: "cover", outlineColor: "rgb(255, 255, 255)", overflowClipMargin: "content-box", overflowX: "clip", overflowY: "clip", position: "absolute", right: "-100%", textDecorationColor: "rgb(255, 255, 255)", textEmphasisColor: "rgb(255, 255, 255)", top: "-100%", width: "100%", zIndex: "-100" }}>
-            </video>
-            <div aria-live="polite" style={{ borderColor: "rgb(255, 255, 255)", color: "rgb(255, 255, 255)", outlineColor: "rgb(255, 255, 255)", textDecorationColor: "rgb(255, 255, 255)", textEmphasisColor: "rgb(255, 255, 255)" }}>
-              <button type="button" aria-controls="f203328c-cc60-941e-26fb-f738fc2ff437-video" style={{ appearance: "button", borderColor: "rgb(255, 255, 255)", bottom: "16px", color: "rgb(255, 255, 255)", cursor: "pointer", outlineColor: "rgb(255, 255, 255)", position: "absolute", right: "16px", textAlign: "center", textDecorationColor: "rgb(255, 255, 255)", textEmphasisColor: "rgb(255, 255, 255)", backgroundColor: "rgba(0, 0, 0, 0)" }}>
-                <span style={{ alignItems: "center", backgroundColor: "rgb(0, 0, 0)", borderBottomLeftRadius: "100%", borderBottomRightRadius: "100%", borderColor: "rgb(255, 255, 255)", borderRadius: "100%", borderTopLeftRadius: "100%", borderTopRightRadius: "100%", color: "rgb(255, 255, 255)", cursor: "pointer", display: "flex", height: "50px", justifyContent: "center", outlineColor: "rgb(255, 255, 255)", textAlign: "center", textDecorationColor: "rgb(255, 255, 255)", textEmphasisColor: "rgb(255, 255, 255)", width: "50px" }}>
-                  <RawImg
-                    loading="lazy"
-                    alt="Pause video"
-                    image="https://cdn.prod.website-files.com/65f9834ec170577cb6334d0d/65fbffe90fcf9583aa1f0da6_play.svg"
-                    css={{ borderColor: "rgb(255, 255, 255)", color: "rgb(255, 255, 255)", cursor: "pointer", height: "20px", maxWidth: "100%", outlineColor: "rgb(255, 255, 255)", overflowClipMargin: "content-box", overflowX: "clip", overflowY: "clip", textAlign: "center", textDecorationColor: "rgb(255, 255, 255)", textEmphasisColor: "rgb(255, 255, 255)", verticalAlign: "middle", width: "20px" }}
-                  />
-                </span>
-                <span hidden style={{ alignItems: "center", backgroundColor: "rgb(0, 0, 0)", borderBottomLeftRadius: "100%", borderBottomRightRadius: "100%", borderColor: "rgb(255, 255, 255)", borderRadius: "100%", borderTopLeftRadius: "100%", borderTopRightRadius: "100%", color: "rgb(255, 255, 255)", cursor: "pointer", display: "none", height: "50px", justifyContent: "center", outlineColor: "rgb(255, 255, 255)", textAlign: "center", textDecorationColor: "rgb(255, 255, 255)", textEmphasisColor: "rgb(255, 255, 255)", width: "50px" }}>
-                  <RawImg
-                    loading="lazy"
-                    alt="Play video"
-                    image="https://cdn.prod.website-files.com/65f9834ec170577cb6334d0d/65fbffe90fcf9583aa1f0da7_pause.svg"
-                    css={{ borderColor: "rgb(255, 255, 255)", color: "rgb(255, 255, 255)", cursor: "pointer", display: "inline-block", height: "20px", maxWidth: "100%", outlineColor: "rgb(255, 255, 255)", overflowClipMargin: "content-box", overflowX: "clip", overflowY: "clip", textAlign: "center", textDecorationColor: "rgb(255, 255, 255)", textEmphasisColor: "rgb(255, 255, 255)", verticalAlign: "middle", width: "20px" }}
-                  />
-                </span>
-              </button>
-            </div>
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              src="https://cdn.builder.io/o/assets%2Faa57fa3495ed440bb8d5e43633a5eae3%2F278eac9bfcd14bdfa81cec9378caa5f8?alt=media&token=80cb3fd4-0b85-42ec-8127-5c281f94878b&apiKey=aa57fa3495ed440bb8d5e43633a5eae3"
+              style={{
+                borderColor: "rgb(255, 255, 255)",
+                bottom: "-100%",
+                color: "rgb(255, 255, 255)",
+                height: "100%",
+                left: "-100%",
+                marginBottom: "auto",
+                marginLeft: "auto",
+                marginRight: "auto",
+                marginTop: "auto",
+                objectFit: "cover",
+                outlineColor: "rgb(255, 255, 255)",
+                overflowClipMargin: "content-box",
+                overflowX: "clip",
+                overflowY: "clip",
+                position: "absolute",
+                right: "-100%",
+                textDecorationColor: "rgb(255, 255, 255)",
+                textEmphasisColor: "rgb(255, 255, 255)",
+                top: "-100%",
+                width: "100%",
+                zIndex: "-100"
+              }}
+            />
           </div>
         </section>
         <section style={{ backgroundColor: "rgb(230, 230, 230)", paddingBottom: "130px", paddingTop: "130px" }}>
