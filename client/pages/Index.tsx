@@ -679,74 +679,16 @@ export default function Index() {
               </h2>
             </div>
             <div>
-              <div role="list">
-                <div role="listitem">
-                  <div style={{ alignItems: "start", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", display: "grid", flexDirection: "column", flexFlow: "column nowrap", gap: "50px", gridGap: "50px", gridRowGap: "50px", gridTemplate: "auto / 1fr 1fr", gridTemplateRows: "auto", justifyItems: "start", position: "relative", rowGap: "50px", transformStyle: "preserve-3d", zIndex: "9", transform: "matrix(1, 0, 0, 1, 0, 0)" }}>
-                    <div style={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", overflowX: "hidden", overflowY: "hidden", position: "relative" }}>
-                      <RawImg
-                        alt="product-image"
-                        loading="eager"
-                        image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/66223551115d6051274fb427_product-image-01.jpg"
-                        css={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", display: "inline-block", maxWidth: "100%", objectFit: "cover", overflowClipMargin: "content-box", overflowX: "clip", overflowY: "clip", verticalAlign: "middle" }}
-                      />
-                    </div>
-                    <div>
-                      <h3 style={{ fontFamily: "Generalsans, sans-serif", fontSize: "54px", lineHeight: "70.2px", marginBottom: "15px" }}>
-                        Purelux hand wash
-                      </h3>
-                      <p style={{ marginBottom: "10px" }}>
-                        Fragrance for a refreshing and enjoyable handwashing
-                        experience.
-                      </p>
-                      <div style={{ alignItems: "center", display: "flex", gap: "20px", gridGap: "20px", gridRowGap: "20px", marginBottom: "20px", marginTop: "20px", rowGap: "20px" }}>
-                        <h2 style={{ fontFamily: "Generalsans, sans-serif", fontSize: "24px", lineHeight: "31.2px" }}>
-                          $ 80.00 USD
-                        </h2>
-                        <h2 style={{ fontFamily: "Generalsans, sans-serif", fontSize: "18px", lineHeight: "23.4px", opacity: "0.4", textDecoration: "line-through solid rgb(0, 0, 0)", textDecorationLine: "line-through" }}>
-                          $ 90.00 USD
-                        </h2>
-                      </div>
-                      <div>
-                        <form style={{ marginBottom: "15px" }}>
-                          <div role="group">
-                            <div role="group">
-                              <label style={{ cursor: "default", marginBottom: "5px" }}>
-                                Size
-                              </label>
-                              <select required style={{ alignItems: "center", appearance: "auto", borderBottom: "1px solid rgb(230, 230, 230)", borderBottomLeftRadius: "5px", borderBottomRightRadius: "5px", borderBottomStyle: "solid", borderBottomWidth: "1px", borderColor: "rgb(230, 230, 230)", borderLeft: "1px solid rgb(230, 230, 230)", borderLeftStyle: "solid", borderLeftWidth: "1px", borderRadius: "5px", borderRight: "1px solid rgb(230, 230, 230)", borderRightStyle: "solid", borderRightWidth: "1px", borderTop: "1px solid rgb(230, 230, 230)", borderTopLeftRadius: "5px", borderTopRightRadius: "5px", borderTopStyle: "solid", borderTopWidth: "1px", borderWidth: "1px", cursor: "default", fontSize: "14px", height: "52px", lineHeight: "normal", marginBottom: "20px", paddingBottom: "10px", paddingLeft: "10px", paddingRight: "12px", paddingTop: "10px", textWrap: "nowrap", transitionDuration: "0.3s", transitionProperty: "border-color", transitionTimingFunction: "ease-in-out", verticalAlign: "middle", whiteSpace: "pre", whiteSpaceCollapse: "preserve", width: "100%" }}>
-                                <option value="" selected style={{ alignItems: "center", cursor: "default", fontSize: "14px", gap: "7px", gridGap: "7px", gridRowGap: "7px", lineHeight: "normal", minHeight: "24px", minWidth: "24px", paddingBottom: "1px", paddingLeft: "2px", paddingRight: "2px", rowGap: "7px", textWrap: "nowrap", whiteSpace: "nowrap" }}>
-                                  Select Size
-                                </option>
-                                <option value="ef6ae1cd7cc0a13580f0f7c72c535a2a" style={{ alignItems: "center", cursor: "default", fontSize: "14px", gap: "7px", gridGap: "7px", gridRowGap: "7px", lineHeight: "normal", minHeight: "24px", minWidth: "24px", paddingBottom: "1px", paddingLeft: "2px", paddingRight: "2px", rowGap: "7px", textWrap: "nowrap", whiteSpace: "nowrap" }}>
-                                  200ml
-                                </option>
-                                <option value="e262bfd798c3012b704153040265e014" style={{ alignItems: "center", cursor: "default", fontSize: "14px", gap: "7px", gridGap: "7px", gridRowGap: "7px", lineHeight: "normal", minHeight: "24px", minWidth: "24px", paddingBottom: "1px", paddingLeft: "2px", paddingRight: "2px", rowGap: "7px", textWrap: "nowrap", whiteSpace: "nowrap" }}>
-                                  500ml
-                                </option>
-                                <option value="eb7ca3e7d26b348331eec4633209acbb" style={{ alignItems: "center", cursor: "default", fontSize: "14px", gap: "7px", gridGap: "7px", gridRowGap: "7px", lineHeight: "normal", minHeight: "24px", minWidth: "24px", paddingBottom: "1px", paddingLeft: "2px", paddingRight: "2px", rowGap: "7px", textWrap: "nowrap", whiteSpace: "nowrap" }}>
-                                  700ml
-                                </option>
-                              </select>
-                            </div>
-                          </div>
-                          <div style={{ alignItems: "stretch", display: "flex", gap: "20px", gridGap: "20px", gridRowGap: "20px", justifyContent: "flex-start", rowGap: "20px" }}>
-                            <input type="number" pattern="^[0-9]+$" inputMode="numeric" name="commerce-add-to-cart-quantity-input" min="1" defaultValue="1" style={{ backgroundColor: "rgb(255, 255, 255)", borderBottom: "1px solid rgb(230, 230, 230)", borderBottomLeftRadius: "5px", borderBottomRightRadius: "5px", borderBottomStyle: "solid", borderBottomWidth: "1px", borderColor: "rgb(230, 230, 230)", borderLeft: "1px solid rgb(230, 230, 230)", borderLeftStyle: "solid", borderLeftWidth: "1px", borderRadius: "5px", borderRight: "1px solid rgb(230, 230, 230)", borderRightStyle: "solid", borderRightWidth: "1px", borderTop: "1px solid rgb(230, 230, 230)", borderTopLeftRadius: "5px", borderTopRightRadius: "5px", borderTopStyle: "solid", borderTopWidth: "1px", borderWidth: "1px", cursor: "text", fontSize: "14px", height: "52px", lineHeight: "20px", overflowX: "clip", overflowY: "clip", paddingBottom: "10px", paddingLeft: "10px", paddingRight: "10px", paddingTop: "10px", transitionDuration: "0.3s", transitionProperty: "border-color", transitionTimingFunction: "ease-in-out", width: "80px" }} />
-                            <input type="submit" aria-busy="false" aria-haspopup="dialog" value="Add to Cart" style={{ alignItems: "center", backgroundColor: "rgb(0, 0, 0)", borderBottomLeftRadius: "5px", borderBottomRightRadius: "5px", borderBottomStyle: "outset", borderLeftStyle: "outset", borderRadius: "5px", borderRightStyle: "outset", borderTopLeftRadius: "5px", borderTopRightRadius: "5px", borderTopStyle: "outset", color: "rgb(255, 255, 255)", cursor: "pointer", display: "flex", justifyContent: "center", lineHeight: "normal", outlineColor: "rgb(255, 255, 255)", overflowX: "clip", overflowY: "clip", paddingBottom: "12px", paddingLeft: "28px", paddingRight: "28px", paddingTop: "12px", textAlign: "center", textDecorationColor: "rgb(255, 255, 255)", textEmphasisColor: "rgb(255, 255, 255)", textWrap: "nowrap", transitionDuration: "0.3s", transitionProperty: "transform", transitionTimingFunction: "ease-in-out", userSelect: "none", whiteSpace: "pre", whiteSpaceCollapse: "preserve" }} />
-                          </div>
-                        </form>
-                        <div tabIndex={0} style={{ backgroundColor: "rgb(230, 230, 230)", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", display: "none", marginTop: "10px", paddingBottom: "20px", paddingLeft: "10px", paddingRight: "10px", paddingTop: "20px", textAlign: "center" }}>
-                          <div style={{ textAlign: "center" }}>
-                            This product is out of stock.
-                          </div>
-                        </div>
-                        <div aria-live="assertive" style={{ backgroundColor: "rgb(233, 34, 34)", borderBottomLeftRadius: "5px", borderBottomRightRadius: "5px", borderColor: "rgb(255, 255, 255)", borderRadius: "5px", borderTopLeftRadius: "5px", borderTopRightRadius: "5px", color: "rgb(255, 255, 255)", display: "none", marginTop: "10px", outlineColor: "rgb(255, 255, 255)", paddingBottom: "15px", paddingLeft: "20px", paddingRight: "20px", paddingTop: "15px", textAlign: "center", textDecorationColor: "rgb(255, 255, 255)", textEmphasisColor: "rgb(255, 255, 255)" }}>
-                          <div style={{ borderColor: "rgb(255, 255, 255)", color: "rgb(255, 255, 255)", outlineColor: "rgb(255, 255, 255)", textAlign: "center", textDecorationColor: "rgb(255, 255, 255)", textEmphasisColor: "rgb(255, 255, 255)" }}>
-                            Product is not available in this quantity.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <div role="list" style={{ display: "flex", justifyContent: "center" }}>
+                <div style={{ maxWidth: "600px", width: "100%" }}>
+                  <ProductCard
+                    id="purelux-hand-wash"
+                    name="Purelux hand wash"
+                    image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/66223551115d6051274fb427_product-image-01.jpg"
+                    hoverImage="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/66223551115d6051274fb427_product-image-01.jpg"
+                    description="Purelux hand wash represents the pinnacle of luxury hand care, combining premium ingredients with exceptional performance. This exclusive formula features rare botanical extracts, silk proteins, and precious oils that create an indulgent cleansing experience unlike any other. The sophisticated fragrance blend incorporates notes of white musk, vanilla orchid, and subtle hints of gold leaf essence. With its rich, velvety texture and long-lasting moisturizing benefits, Purelux transforms everyday handwashing into a luxurious ritual that pampers your skin while providing superior cleansing power."
+                    linkTo="/product/purelux-hand-wash"
+                  />
                 </div>
               </div>
             </div>
