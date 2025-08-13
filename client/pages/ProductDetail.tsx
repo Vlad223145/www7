@@ -198,7 +198,7 @@ export default function ProductDetail() {
               {/* Features */}
               <div style={{ marginBottom: "40px" }}>
                 <h3 style={{ fontSize: "24px", fontFamily: "Generalsans, sans-serif", marginBottom: "20px" }}>
-                  Ключевые особенности
+                  Key Features
                 </h3>
                 <div style={{ display: "grid", gap: "10px" }}>
                   {product.features.map((feature, index) => (
@@ -212,7 +212,7 @@ export default function ProductDetail() {
 
               {/* Size Selection */}
               <div style={{ marginBottom: "30px" }}>
-                <label style={{ display: "block", marginBottom: "10px", fontWeight: "bold" }}>Размер</label>
+                <label style={{ display: "block", marginBottom: "10px", fontWeight: "bold" }}>Size</label>
                 <select style={{ width: "100%", padding: "15px", borderRadius: "10px", border: "2px solid rgb(230, 230, 230)", fontSize: "16px" }}>
                   <option>200ml</option>
                   <option>500ml</option>
@@ -222,24 +222,24 @@ export default function ProductDetail() {
 
               {/* Add to Cart */}
               <div style={{ display: "flex", gap: "20px", marginBottom: "40px" }}>
-                <input 
-                  type="number" 
-                  defaultValue="1" 
+                <input
+                  type="number"
+                  defaultValue="1"
                   min="1"
                   style={{ width: "80px", padding: "15px", borderRadius: "10px", border: "2px solid rgb(230, 230, 230)", textAlign: "center" }}
                 />
-                <button style={{ 
-                  flex: "1", 
-                  backgroundColor: "rgb(0, 0, 0)", 
-                  color: "rgb(255, 255, 255)", 
-                  padding: "15px 30px", 
-                  borderRadius: "10px", 
-                  border: "none", 
-                  fontSize: "18px", 
-                  fontWeight: "bold", 
-                  cursor: "pointer" 
+                <button style={{
+                  flex: "1",
+                  backgroundColor: "rgb(0, 0, 0)",
+                  color: "rgb(255, 255, 255)",
+                  padding: "15px 30px",
+                  borderRadius: "10px",
+                  border: "none",
+                  fontSize: "18px",
+                  fontWeight: "bold",
+                  cursor: "pointer"
                 }}>
-                  Добавить в корзину
+                  Try
                 </button>
               </div>
 
@@ -247,7 +247,7 @@ export default function ProductDetail() {
               <div style={{ borderTop: "1px solid rgb(230, 230, 230)", paddingTop: "40px" }}>
                 <div style={{ marginBottom: "30px" }}>
                   <h3 style={{ fontSize: "20px", fontFamily: "Generalsans, sans-serif", marginBottom: "15px" }}>
-                    Состав
+                    Composition
                   </h3>
                   <p style={{ lineHeight: "1.6", color: "rgb(100, 100, 100)" }}>
                     {product.composition}
@@ -256,7 +256,7 @@ export default function ProductDetail() {
 
                 <div style={{ marginBottom: "30px" }}>
                   <h3 style={{ fontSize: "20px", fontFamily: "Generalsans, sans-serif", marginBottom: "15px" }}>
-                    Воздействие
+                    Effects
                   </h3>
                   <p style={{ lineHeight: "1.6", color: "rgb(100, 100, 100)" }}>
                     {product.effects}
@@ -265,7 +265,7 @@ export default function ProductDetail() {
 
                 <div style={{ marginBottom: "30px" }}>
                   <h3 style={{ fontSize: "20px", fontFamily: "Generalsans, sans-serif", marginBottom: "15px" }}>
-                    Применение
+                    Usage
                   </h3>
                   <p style={{ lineHeight: "1.6", color: "rgb(100, 100, 100)" }}>
                     {product.usage}
@@ -274,7 +274,7 @@ export default function ProductDetail() {
 
                 <div>
                   <h3 style={{ fontSize: "20px", fontFamily: "Generalsans, sans-serif", marginBottom: "15px" }}>
-                    Активные ингредиенты
+                    Active Ingredients
                   </h3>
                   <div style={{ display: "grid", gap: "8px" }}>
                     {product.ingredients.map((ingredient, index) => (
