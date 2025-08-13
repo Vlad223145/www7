@@ -379,99 +379,30 @@ export default function Index() {
             </div>
             <div>
               <div role="list" style={{ display: "grid", gap: "50px", gridGap: "50px", gridRowGap: "50px", gridTemplate: "auto / 1fr 1fr 1fr", gridTemplateRows: "auto", rowGap: "50px", transformStyle: "preserve-3d", transform: "matrix(1, 0, 0, 1, 0, 0)" }}>
-                <div role="listitem">
-                  <Link to="/product/sparklesoft-hand-wash" style={{ alignItems: "flex-start", cursor: "pointer", display: "flex", flexDirection: "column", flexFlow: "column nowrap", gap: "15px", gridGap: "15px", gridRowGap: "15px", maxWidth: "100%", rowGap: "15px", textDecoration: "none", color: "inherit" }}>
-                    <div style={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", cursor: "pointer", overflowX: "hidden", overflowY: "hidden", position: "relative" }}>
-                      <RawImg
-                        alt="product-image"
-                        loading="eager"
-                        image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/662235ae210b04851586d4a5_product-image-04.jpg"
-                        css={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", cursor: "pointer", display: "inline-block", height: "600px", maxWidth: "100%", objectFit: "cover", overflowClipMargin: "content-box", overflowX: "clip", overflowY: "clip", verticalAlign: "middle", width: "100%" }}
-                      />
-                      <RawImg
-                        alt="product-image"
-                        loading="eager"
-                        image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/65fbf73159858f314a83e98f_product-hover-04.jpg"
-                        css={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", bottom: "0%", cursor: "pointer", height: "600px", left: "0%", maxWidth: "100%", objectFit: "cover", opacity: "0", overflowClipMargin: "content-box", overflowX: "clip", overflowY: "clip", position: "absolute", right: "0%", top: "0%", verticalAlign: "middle", width: "100%" }}
-                      />
-                    </div>
-                    <div style={{ alignItems: "flex-start", cursor: "pointer", display: "flex", flexDirection: "column", flexFlow: "column nowrap", gap: "5px", gridGap: "5px", gridRowGap: "5px", rowGap: "5px" }}>
-                      <h3 style={{ cursor: "pointer", fontSize: "22px", lineHeight: "28.6px" }}>
-                        Sparklesoft hand wash
-                      </h3>
-                      <div style={{ alignItems: "center", cursor: "pointer", display: "flex", gap: "15px", gridGap: "15px", gridRowGap: "15px", justifyContent: "flex-start", rowGap: "15px" }}>
-                        <div style={{ cursor: "pointer" }}>
-                          $ 27.00 USD
-                        </div>
-                        <div style={{ cursor: "pointer", fontSize: "14px", opacity: "0.3", textDecoration: "line-through solid rgb(0, 0, 0)", textDecorationLine: "line-through" }}>
-                          $ 40.00 USD
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div role="listitem">
-                  <Link to="/product/soothesuds-hand-wash" style={{ alignItems: "flex-start", cursor: "pointer", display: "flex", flexDirection: "column", flexFlow: "column nowrap", gap: "15px", gridGap: "15px", gridRowGap: "15px", maxWidth: "100%", rowGap: "15px", textDecoration: "none", color: "inherit" }}>
-                    <div style={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", cursor: "pointer", overflowX: "hidden", overflowY: "hidden", position: "relative" }}>
-                      <RawImg
-                        alt="product-image"
-                        loading="eager"
-                        image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/6622361dc4e8a0f82d73b13e_product-image-08.jpg"
-                        css={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", cursor: "pointer", display: "inline-block", height: "600px", maxWidth: "100%", objectFit: "cover", overflowClipMargin: "content-box", overflowX: "clip", overflowY: "clip", verticalAlign: "middle", width: "100%" }}
-                      />
-                      <RawImg
-                        alt="product-image"
-                        loading="eager"
-                        image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/65fbf77715e580b72226ce27_product-hover-08.jpg"
-                        css={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", bottom: "0%", cursor: "pointer", height: "600px", left: "0%", maxWidth: "100%", objectFit: "cover", opacity: "0", overflowClipMargin: "content-box", overflowX: "clip", overflowY: "clip", position: "absolute", right: "0%", top: "0%", verticalAlign: "middle", width: "100%" }}
-                      />
-                    </div>
-                    <div style={{ alignItems: "flex-start", cursor: "pointer", display: "flex", flexDirection: "column", flexFlow: "column nowrap", gap: "5px", gridGap: "5px", gridRowGap: "5px", rowGap: "5px" }}>
-                      <h3 style={{ cursor: "pointer", fontSize: "22px", lineHeight: "28.6px" }}>
-                        Soothesuds hand wash
-                      </h3>
-                      <div style={{ alignItems: "center", cursor: "pointer", display: "flex", gap: "15px", gridGap: "15px", gridRowGap: "15px", justifyContent: "flex-start", rowGap: "15px" }}>
-                        <div style={{ cursor: "pointer" }}>
-                          $ 68.00 USD
-                        </div>
-                        <div style={{ cursor: "pointer", fontSize: "14px", opacity: "0.3", textDecoration: "line-through solid rgb(0, 0, 0)", textDecorationLine: "line-through" }}>
-                          $ 75.00 USD
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div role="listitem">
-                  <Link to="/product/vitalguard-hand-wash" style={{ alignItems: "flex-start", cursor: "pointer", display: "flex", flexDirection: "column", flexFlow: "column nowrap", gap: "15px", gridGap: "15px", gridRowGap: "15px", maxWidth: "100%", rowGap: "15px", textDecoration: "none", color: "inherit" }}>
-                    <div style={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", cursor: "pointer", overflowX: "hidden", overflowY: "hidden", position: "relative" }}>
-                      <RawImg
-                        alt="product-image"
-                        loading="eager"
-                        image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/6622366ca8850ec53ff1b22a_product-image-12.jpg"
-                        css={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", cursor: "pointer", display: "inline-block", height: "600px", maxWidth: "100%", objectFit: "cover", overflowClipMargin: "content-box", overflowX: "clip", overflowY: "clip", verticalAlign: "middle", width: "100%" }}
-                      />
-                      <RawImg
-                        alt="product-image"
-                        loading="eager"
-                        image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/65fc0c78abb09415fe40b4cc_product-hover-12.jpg"
-                        css={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", bottom: "0%", cursor: "pointer", height: "600px", left: "0%", maxWidth: "100%", objectFit: "cover", opacity: "0", overflowClipMargin: "content-box", overflowX: "clip", overflowY: "clip", position: "absolute", right: "0%", top: "0%", verticalAlign: "middle", width: "100%" }}
-                      />
-                    </div>
-                    <div style={{ alignItems: "flex-start", cursor: "pointer", display: "flex", flexDirection: "column", flexFlow: "column nowrap", gap: "5px", gridGap: "5px", gridRowGap: "5px", rowGap: "5px" }}>
-                      <h3 style={{ cursor: "pointer", fontSize: "22px", lineHeight: "28.6px" }}>
-                        Vitalguard hand wash
-                      </h3>
-                      <div style={{ alignItems: "center", cursor: "pointer", display: "flex", gap: "15px", gridGap: "15px", gridRowGap: "15px", justifyContent: "flex-start", rowGap: "15px" }}>
-                        <div style={{ cursor: "pointer" }}>
-                          $ 30.00 USD
-                        </div>
-                        <div style={{ cursor: "pointer", fontSize: "14px", opacity: "0.3", textDecoration: "line-through solid rgb(0, 0, 0)", textDecorationLine: "line-through" }}>
-                          $ 50.00 USD
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
+                <ProductCard
+                  id="sparklesoft-hand-wash"
+                  name="Sparklesoft hand wash"
+                  image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/662235ae210b04851586d4a5_product-image-04.jpg"
+                  hoverImage="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/65fbf73159858f314a83e98f_product-hover-04.jpg"
+                  description="Experience the ultimate in hand care with Sparklesoft hand wash. Our advanced formula combines gentle cleansing agents with moisturizing elements to leave your hands feeling incredibly soft and clean. Enriched with natural extracts and vitamins, this luxurious hand wash provides deep cleansing while maintaining your skin's natural moisture balance. Perfect for daily use, it effectively removes dirt and bacteria while leaving a subtle, refreshing scent."
+                  linkTo="/product/sparklesoft-hand-wash"
+                />
+                <ProductCard
+                  id="soothesuds-hand-wash"
+                  name="Soothesuds hand wash"
+                  image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/6622361dc4e8a0f82d73b13e_product-image-08.jpg"
+                  hoverImage="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/65fbf77715e580b72226ce27_product-hover-08.jpg"
+                  description="Soothesuds hand wash delivers exceptional comfort and protection for sensitive skin. Our hypoallergenic formula is specially crafted with calming botanical extracts including chamomile and aloe vera to soothe and nourish delicate skin. This gentle yet effective hand wash removes impurities without causing irritation, making it ideal for frequent use. The pH-balanced formula helps maintain healthy skin while providing long-lasting moisturization and protection."
+                  linkTo="/product/soothesuds-hand-wash"
+                />
+                <ProductCard
+                  id="vitalguard-hand-wash"
+                  name="Vitalguard hand wash"
+                  image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/6622366ca8850ec53ff1b22a_product-image-12.jpg"
+                  hoverImage="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/65fc0c78abb09415fe40b4cc_product-hover-12.jpg"
+                  description="Vitalguard hand wash offers superior antimicrobial protection without compromising on gentleness. Formulated with advanced cleansing technology and enriched with vitamin E and essential oils, this powerful hand wash eliminates 99.9% of germs while keeping your hands soft and hydrated. The refreshing citrus scent invigorates your senses while the rich, creamy lather provides a luxurious washing experience. Dermatologist-tested and suitable for all skin types."
+                  linkTo="/product/vitalguard-hand-wash"
+                />
               </div>
             </div>
           </div>
