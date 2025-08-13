@@ -233,12 +233,12 @@ export default function Index() {
             <div style={{ alignItems: "flex-start", display: "flex", flexDirection: "column", flexFlow: "column nowrap", marginBottom: "60px", marginLeft: "150px", marginRight: "150px", marginTop: "195px", overflowX: "hidden", overflowY: "hidden" }}>
               <div style={{ backgroundColor: "rgb(255, 255, 255)", color: "rgb(0, 0, 0)", borderRadius: "20px", padding: "60px", border: "2px solid rgb(0, 0, 0)", maxWidth: "600px" }}>
                 <h1 style={{ fontFamily: "Generalsans, sans-serif", fontSize: "48px", lineHeight: "56px", marginBottom: "30px", textAlign: "center", fontWeight: "bold" }}>
-                  Получите пробный набор бесплатно
+                  Get Your Free Trial Kit
                 </h1>
 
                 <div style={{ textAlign: "center", marginBottom: "40px" }}>
                   <div style={{ fontSize: "18px", marginBottom: "20px" }}>
-                    с бесплатной доставкой за подвязку карты
+                    with free shipping when you add your card
                   </div>
 
                   <div style={{ fontSize: "64px", fontWeight: "bold", fontFamily: "monospace", marginBottom: "20px" }}>
@@ -246,22 +246,22 @@ export default function Index() {
                   </div>
 
                   <div style={{ fontSize: "14px", color: "rgb(100, 100, 100)" }}>
-                    Предложение ограничено по времени
+                    Limited time offer
                   </div>
                 </div>
 
                 <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "40px", fontSize: "16px" }}>
                   <div style={{ textAlign: "center", flex: "1" }}>
-                    <div style={{ fontWeight: "bold", marginBottom: "5px" }}>1. Выбрать</div>
-                    <div style={{ color: "rgb(100, 100, 100)" }}>Набор продуктов</div>
+                    <div style={{ fontWeight: "bold", marginBottom: "5px" }}>1. Choose</div>
+                    <div style={{ color: "rgb(100, 100, 100)" }}>Product set</div>
                   </div>
                   <div style={{ textAlign: "center", flex: "1" }}>
-                    <div style={{ fontWeight: "bold", marginBottom: "5px" }}>2. Добавить</div>
-                    <div style={{ color: "rgb(100, 100, 100)" }}>Данные карты</div>
+                    <div style={{ fontWeight: "bold", marginBottom: "5px" }}>2. Add</div>
+                    <div style={{ color: "rgb(100, 100, 100)" }}>Card details</div>
                   </div>
                   <div style={{ textAlign: "center", flex: "1" }}>
-                    <div style={{ fontWeight: "bold", marginBottom: "5px" }}>3. Получить</div>
-                    <div style={{ color: "rgb(100, 100, 100)" }}>Бесплатно</div>
+                    <div style={{ fontWeight: "bold", marginBottom: "5px" }}>3. Get</div>
+                    <div style={{ color: "rgb(100, 100, 100)" }}>For free</div>
                   </div>
                 </div>
 
