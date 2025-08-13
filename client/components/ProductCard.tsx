@@ -60,18 +60,30 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             gap: '15px'
           }}
         >
-          <div 
-            style={{ 
-              borderBottomLeftRadius: "10px", 
-              borderBottomRightRadius: "10px", 
-              borderRadius: "10px", 
-              borderTopLeftRadius: "10px", 
-              borderTopRightRadius: "10px", 
-              cursor: "pointer", 
-              overflowX: "hidden", 
-              overflowY: "hidden", 
+          <div
+            style={{
+              borderBottomLeftRadius: "10px",
+              borderBottomRightRadius: "10px",
+              borderRadius: "10px",
+              borderTopLeftRadius: "10px",
+              borderTopRightRadius: "10px",
+              cursor: "pointer",
+              overflowX: "hidden",
+              overflowY: "hidden",
               position: "relative",
-              height: '600px' 
+              height: '600px'
+            }}
+            onMouseEnter={(e) => {
+              const hoverImg = e.currentTarget.querySelector('img:last-child') as HTMLImageElement;
+              if (hoverImg) {
+                hoverImg.style.opacity = '1';
+              }
+            }}
+            onMouseLeave={(e) => {
+              const hoverImg = e.currentTarget.querySelector('img:last-child') as HTMLImageElement;
+              if (hoverImg) {
+                hoverImg.style.opacity = '0';
+              }
             }}
           >
             <RawImg
