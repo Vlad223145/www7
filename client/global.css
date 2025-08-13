@@ -104,24 +104,45 @@
     @apply bg-background text-foreground;
   }
 
-  /* Предотвращение нежелательного скролла при взаимодействии с изображениями */
+  /* КРИТИЧЕСКОЕ ИСПРАВЛЕНИЕ: Предотвращение нежелательного скролла */
   img {
     user-select: none;
     -webkit-user-select: none;
     -webkit-touch-callout: none;
     -webkit-user-drag: none;
     -webkit-tap-highlight-color: transparent;
+    pointer-events: inherit;
   }
 
-  /* Плавное скрольное поведение для всей страницы */
+  /* Отключить скролл во время обработки событий */
   html {
-    scroll-behavior: smooth;
+    scroll-behavior: auto !important;
   }
 
-  /* Предотвращение случайного выделения текста при кликах */
+  /* Предотвращение случайного выделения текста и скролла */
   .no-select {
     user-select: none;
     -webkit-user-select: none;
     -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Фиксация скролла для контейнеров продуктов */
+  [data-image-container] {
+    overflow: hidden;
+    isolation: isolate;
+    transform: translateZ(0);
+    will-change: auto;
+  }
+
+  [data-image-container]:hover {
+    isolation: isolate;
+    transform: translateZ(0);
+  }
+
+  /* Предотвращение bounce эффекта */
+  body {
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
   }
 }
