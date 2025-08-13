@@ -508,7 +508,7 @@ export default function Index() {
               loop
               muted
               playsInline
-              src="https://cdn.builder.io/o/assets%2Faa57fa3495ed440bb8d5e43633a5eae3%2F278eac9bfcd14bdfa81cec9378caa5f8?alt=media&token=80cb3fd4-0b85-42ec-8127-5c281f94878b&apiKey=aa57fa3495ed440bb8d5e43633a5eae3"
+              src="https://cdn.builder.io/o/assets%2Faa57fa3495ed440bb8d5e43633a5eae3%2Fa5c3e99879f44e4abffe8a2d7a390e96?alt=media&token=85445969-515e-425f-a463-f51efacfbe91&apiKey=aa57fa3495ed440bb8d5e43633a5eae3"
               style={{
                 borderColor: "rgb(255, 255, 255)",
                 bottom: "-100%",
