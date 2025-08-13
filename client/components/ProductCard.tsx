@@ -250,22 +250,25 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               alt="product-image"
               loading="eager"
               image={image}
-              css={{ 
-                borderBottomLeftRadius: "10px", 
-                borderBottomRightRadius: "10px", 
-                borderRadius: "10px", 
-                borderTopLeftRadius: "10px", 
-                borderTopRightRadius: "10px", 
-                cursor: "pointer", 
-                display: "inline-block", 
-                height: "600px", 
-                maxWidth: "100%", 
-                objectFit: "cover", 
-                overflowClipMargin: "content-box", 
-                overflowX: "clip", 
-                overflowY: "clip", 
-                verticalAlign: "middle", 
-                width: "100%" 
+              css={{
+                borderBottomLeftRadius: "10px",
+                borderBottomRightRadius: "10px",
+                borderRadius: "10px",
+                borderTopLeftRadius: "10px",
+                borderTopRightRadius: "10px",
+                cursor: "pointer",
+                display: "block",
+                height: "600px",
+                maxWidth: "100%",
+                objectFit: "cover",
+                overflowClipMargin: "content-box",
+                overflowX: "clip",
+                overflowY: "clip",
+                verticalAlign: "middle",
+                width: "100%",
+                userSelect: "none",
+                WebkitUserSelect: "none",
+                pointerEvents: "none"
               }}
             />
             <RawImg
@@ -293,7 +296,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                 top: "0%",
                 verticalAlign: "middle",
                 width: "100%",
-                transition: 'opacity 0.3s ease'
+                transition: 'opacity 0.3s ease',
+                userSelect: "none",
+                WebkitUserSelect: "none",
+                pointerEvents: "none"
               }}
             />
           </div>
