@@ -619,186 +619,54 @@ export default function Index() {
             </div>
             <div>
               <div role="list" style={{ display: "grid", gap: "50px", gridGap: "50px", gridRowGap: "50px", gridTemplate: "auto / 1fr 1fr 1fr", gridTemplateRows: "auto", rowGap: "50px", transformStyle: "preserve-3d", transform: "matrix(1, 0, 0, 1, 0, 0)" }}>
-                <div role="listitem">
-                  <a href="https://handly-wbs.webflow.io/product/freshcrisp-hand-wash" style={{ alignItems: "flex-start", cursor: "pointer", display: "flex", flexDirection: "column", flexFlow: "column nowrap", gap: "15px", gridGap: "15px", gridRowGap: "15px", maxWidth: "100%", rowGap: "15px" }}>
-                    <div style={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", cursor: "pointer", overflowX: "hidden", overflowY: "hidden", position: "relative" }}>
-                      <RawImg
-                        alt="product-image"
-                        loading="eager"
-                        image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/662235861f5ef2481f56129a_product-image-02.jpg"
-                        css={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", cursor: "pointer", display: "inline-block", height: "600px", maxWidth: "100%", objectFit: "cover", overflowClipMargin: "content-box", overflowX: "clip", overflowY: "clip", verticalAlign: "middle", width: "100%" }}
-                      />
-                      <RawImg
-                        alt="product-image"
-                        loading="eager"
-                        image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/65fbf6fb7c049f14eed0b443_product-hover-02.jpg"
-                        css={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", bottom: "0%", cursor: "pointer", height: "600px", left: "0%", maxWidth: "100%", objectFit: "cover", opacity: "0", overflowClipMargin: "content-box", overflowX: "clip", overflowY: "clip", position: "absolute", right: "0%", top: "0%", verticalAlign: "middle", width: "100%" }}
-                      />
-                    </div>
-                    <div style={{ alignItems: "flex-start", cursor: "pointer", display: "flex", flexDirection: "column", flexFlow: "column nowrap", gap: "5px", gridGap: "5px", gridRowGap: "5px", rowGap: "5px" }}>
-                      <h3 style={{ cursor: "pointer", fontSize: "22px", lineHeight: "28.6px" }}>
-                        Freshcrisp hand wash
-                      </h3>
-                      <div style={{ alignItems: "center", cursor: "pointer", display: "flex", gap: "15px", gridGap: "15px", gridRowGap: "15px", justifyContent: "flex-start", rowGap: "15px" }}>
-                        <div style={{ cursor: "pointer" }}>
-                          $ 60.00 USD
-                        </div>
-                        <div style={{ cursor: "pointer", display: "none", fontSize: "14px", opacity: "0.3", textDecoration: "line-through solid rgb(0, 0, 0)", textDecorationLine: "line-through" }}>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div role="listitem">
-                  <a href="https://handly-wbs.webflow.io/product/velvetclean-hand-wash" style={{ alignItems: "flex-start", cursor: "pointer", display: "flex", flexDirection: "column", flexFlow: "column nowrap", gap: "15px", gridGap: "15px", gridRowGap: "15px", maxWidth: "100%", rowGap: "15px" }}>
-                    <div style={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", cursor: "pointer", overflowX: "hidden", overflowY: "hidden", position: "relative" }}>
-                      <RawImg
-                        alt="product-image"
-                        loading="eager"
-                        image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/6622359994a9f767467f0509_product-image-03.jpg"
-                        css={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", cursor: "pointer", display: "inline-block", height: "600px", maxWidth: "100%", objectFit: "cover", overflowClipMargin: "content-box", overflowX: "clip", overflowY: "clip", verticalAlign: "middle", width: "100%" }}
-                      />
-                      <RawImg
-                        alt="product-image"
-                        loading="eager"
-                        image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/66190e6ea0abc1a95b2d1d94_instagram-image-05.jpg"
-                        css={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", bottom: "0%", cursor: "pointer", height: "600px", left: "0%", maxWidth: "100%", objectFit: "cover", opacity: "0", overflowClipMargin: "content-box", overflowX: "clip", overflowY: "clip", position: "absolute", right: "0%", top: "0%", verticalAlign: "middle", width: "100%" }}
-                      />
-                    </div>
-                    <div style={{ alignItems: "flex-start", cursor: "pointer", display: "flex", flexDirection: "column", flexFlow: "column nowrap", gap: "5px", gridGap: "5px", gridRowGap: "5px", rowGap: "5px" }}>
-                      <h3 style={{ cursor: "pointer", fontSize: "22px", lineHeight: "28.6px" }}>
-                        Velvetclean hand wash
-                      </h3>
-                      <div style={{ alignItems: "center", cursor: "pointer", display: "flex", gap: "15px", gridGap: "15px", gridRowGap: "15px", justifyContent: "flex-start", rowGap: "15px" }}>
-                        <div style={{ cursor: "pointer" }}>
-                          $ 50.00 USD
-                        </div>
-                        <div style={{ cursor: "pointer", display: "none", fontSize: "14px", opacity: "0.3", textDecoration: "line-through solid rgb(0, 0, 0)", textDecorationLine: "line-through" }}>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div role="listitem">
-                  <a href="https://handly-wbs.webflow.io/product/refreshrinse-hand-wash" style={{ alignItems: "flex-start", cursor: "pointer", display: "flex", flexDirection: "column", flexFlow: "column nowrap", gap: "15px", gridGap: "15px", gridRowGap: "15px", maxWidth: "100%", rowGap: "15px" }}>
-                    <div style={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", cursor: "pointer", overflowX: "hidden", overflowY: "hidden", position: "relative" }}>
-                      <RawImg
-                        alt="product-image"
-                        loading="eager"
-                        image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/662235dad1b814ae15864300_product-image-06.jpg"
-                        css={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", cursor: "pointer", display: "inline-block", height: "600px", maxWidth: "100%", objectFit: "cover", overflowClipMargin: "content-box", overflowX: "clip", overflowY: "clip", verticalAlign: "middle", width: "100%" }}
-                      />
-                      <RawImg
-                        alt="product-image"
-                        loading="eager"
-                        image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/65fbf744c43eb79a541fec5a_product-hover-05.jpg"
-                        css={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", bottom: "0%", cursor: "pointer", height: "600px", left: "0%", maxWidth: "100%", objectFit: "cover", opacity: "0", overflowClipMargin: "content-box", overflowX: "clip", overflowY: "clip", position: "absolute", right: "0%", top: "0%", verticalAlign: "middle", width: "100%" }}
-                      />
-                    </div>
-                    <div style={{ alignItems: "flex-start", cursor: "pointer", display: "flex", flexDirection: "column", flexFlow: "column nowrap", gap: "5px", gridGap: "5px", gridRowGap: "5px", rowGap: "5px" }}>
-                      <h3 style={{ cursor: "pointer", fontSize: "22px", lineHeight: "28.6px" }}>
-                        Refreshrinse hand wash
-                      </h3>
-                      <div style={{ alignItems: "center", cursor: "pointer", display: "flex", gap: "15px", gridGap: "15px", gridRowGap: "15px", justifyContent: "flex-start", rowGap: "15px" }}>
-                        <div style={{ cursor: "pointer" }}>
-                          $ 45.00 USD
-                        </div>
-                        <div style={{ cursor: "pointer", display: "none", fontSize: "14px", opacity: "0.3", textDecoration: "line-through solid rgb(0, 0, 0)", textDecorationLine: "line-through" }}>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div role="listitem">
-                  <a href="https://handly-wbs.webflow.io/product/cleanscent-hand-wash" style={{ alignItems: "flex-start", cursor: "pointer", display: "flex", flexDirection: "column", flexFlow: "column nowrap", gap: "15px", gridGap: "15px", gridRowGap: "15px", maxWidth: "100%", rowGap: "15px" }}>
-                    <div style={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", cursor: "pointer", overflowX: "hidden", overflowY: "hidden", position: "relative" }}>
-                      <RawImg
-                        alt="product-image"
-                        loading="eager"
-                        image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/662235f3434322eac6a406f1_product-image-05.jpg"
-                        css={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", cursor: "pointer", display: "inline-block", height: "600px", maxWidth: "100%", objectFit: "cover", overflowClipMargin: "content-box", overflowX: "clip", overflowY: "clip", verticalAlign: "middle", width: "100%" }}
-                      />
-                      <RawImg
-                        alt="product-image"
-                        loading="eager"
-                        image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/65fbf755ba06eefad1ef33a7_product-hover-06.jpg"
-                        css={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", bottom: "0%", cursor: "pointer", height: "600px", left: "0%", maxWidth: "100%", objectFit: "cover", opacity: "0", overflowClipMargin: "content-box", overflowX: "clip", overflowY: "clip", position: "absolute", right: "0%", top: "0%", verticalAlign: "middle", width: "100%" }}
-                      />
-                    </div>
-                    <div style={{ alignItems: "flex-start", cursor: "pointer", display: "flex", flexDirection: "column", flexFlow: "column nowrap", gap: "5px", gridGap: "5px", gridRowGap: "5px", rowGap: "5px" }}>
-                      <h3 style={{ cursor: "pointer", fontSize: "22px", lineHeight: "28.6px" }}>
-                        Cleanscent hand wash
-                      </h3>
-                      <div style={{ alignItems: "center", cursor: "pointer", display: "flex", gap: "15px", gridGap: "15px", gridRowGap: "15px", justifyContent: "flex-start", rowGap: "15px" }}>
-                        <div style={{ cursor: "pointer" }}>
-                          $ 72.00 USD
-                        </div>
-                        <div style={{ cursor: "pointer", display: "none", fontSize: "14px", opacity: "0.3", textDecoration: "line-through solid rgb(0, 0, 0)", textDecorationLine: "line-through" }}>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div role="listitem">
-                  <a href="https://handly-wbs.webflow.io/product/clean-plus-hand-wash" style={{ alignItems: "flex-start", cursor: "pointer", display: "flex", flexDirection: "column", flexFlow: "column nowrap", gap: "15px", gridGap: "15px", gridRowGap: "15px", maxWidth: "100%", rowGap: "15px" }}>
-                    <div style={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", cursor: "pointer", overflowX: "hidden", overflowY: "hidden", position: "relative" }}>
-                      <RawImg
-                        alt="product-image"
-                        loading="eager"
-                        image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/66223606cde825c4cfde2da4_product-image-07.jpg"
-                        css={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", cursor: "pointer", display: "inline-block", height: "600px", maxWidth: "100%", objectFit: "cover", overflowClipMargin: "content-box", overflowX: "clip", overflowY: "clip", verticalAlign: "middle", width: "100%" }}
-                      />
-                      <RawImg
-                        alt="product-image"
-                        loading="eager"
-                        image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/65fbf768ea85400f354f68a9_product-hover-07.jpg"
-                        css={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", bottom: "0%", cursor: "pointer", height: "600px", left: "0%", maxWidth: "100%", objectFit: "cover", opacity: "0", overflowClipMargin: "content-box", overflowX: "clip", overflowY: "clip", position: "absolute", right: "0%", top: "0%", verticalAlign: "middle", width: "100%" }}
-                      />
-                    </div>
-                    <div style={{ alignItems: "flex-start", cursor: "pointer", display: "flex", flexDirection: "column", flexFlow: "column nowrap", gap: "5px", gridGap: "5px", gridRowGap: "5px", rowGap: "5px" }}>
-                      <h3 style={{ cursor: "pointer", fontSize: "22px", lineHeight: "28.6px" }}>
-                        Clean plus hand wash
-                      </h3>
-                      <div style={{ alignItems: "center", cursor: "pointer", display: "flex", gap: "15px", gridGap: "15px", gridRowGap: "15px", justifyContent: "flex-start", rowGap: "15px" }}>
-                        <div style={{ cursor: "pointer" }}>
-                          $ 75.00 USD
-                        </div>
-                        <div style={{ cursor: "pointer", display: "none", fontSize: "14px", opacity: "0.3", textDecoration: "line-through solid rgb(0, 0, 0)", textDecorationLine: "line-through" }}>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div role="listitem">
-                  <a href="https://handly-wbs.webflow.io/product/zenguard-hand-wash" style={{ alignItems: "flex-start", cursor: "pointer", display: "flex", flexDirection: "column", flexFlow: "column nowrap", gap: "15px", gridGap: "15px", gridRowGap: "15px", maxWidth: "100%", rowGap: "15px" }}>
-                    <div style={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", cursor: "pointer", overflowX: "hidden", overflowY: "hidden", position: "relative" }}>
-                      <RawImg
-                        alt="product-image"
-                        loading="eager"
-                        image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/662236302c073d26c21a00ff_product-image-09.jpg"
-                        css={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", cursor: "pointer", display: "inline-block", height: "600px", maxWidth: "100%", objectFit: "cover", overflowClipMargin: "content-box", overflowX: "clip", overflowY: "clip", verticalAlign: "middle", width: "100%" }}
-                      />
-                      <RawImg
-                        alt="product-image"
-                        loading="eager"
-                        image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/65fbf7859ab5b855de666d51_product-hover-09.jpg"
-                        css={{ borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px", borderRadius: "10px", borderTopLeftRadius: "10px", borderTopRightRadius: "10px", bottom: "0%", cursor: "pointer", height: "600px", left: "0%", maxWidth: "100%", objectFit: "cover", opacity: "0", overflowClipMargin: "content-box", overflowX: "clip", overflowY: "clip", position: "absolute", right: "0%", top: "0%", verticalAlign: "middle", width: "100%" }}
-                      />
-                    </div>
-                    <div style={{ alignItems: "flex-start", cursor: "pointer", display: "flex", flexDirection: "column", flexFlow: "column nowrap", gap: "5px", gridGap: "5px", gridRowGap: "5px", rowGap: "5px" }}>
-                      <h3 style={{ cursor: "pointer", fontSize: "22px", lineHeight: "28.6px" }}>
-                        Zenguard hand wash
-                      </h3>
-                      <div style={{ alignItems: "center", cursor: "pointer", display: "flex", gap: "15px", gridGap: "15px", gridRowGap: "15px", justifyContent: "flex-start", rowGap: "15px" }}>
-                        <div style={{ cursor: "pointer" }}>
-                          $ 35.00 USD
-                        </div>
-                        <div style={{ cursor: "pointer", display: "none", fontSize: "14px", opacity: "0.3", textDecoration: "line-through solid rgb(0, 0, 0)", textDecorationLine: "line-through" }}>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
+                <ProductCard
+                  id="freshcrisp-hand-wash"
+                  name="Freshcrisp hand wash"
+                  image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/662235861f5ef2481f56129a_product-image-02.jpg"
+                  hoverImage="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/65fbf6fb7c049f14eed0b443_product-hover-02.jpg"
+                  description="Freshcrisp hand wash provides an invigorating cleansing experience with its refreshing formula. Infused with natural citrus extracts and essential oils, this energizing hand wash awakens your senses while thoroughly cleansing your hands. The crisp, clean scent provides long-lasting freshness throughout the day. Our unique blend of moisturizing agents ensures your hands stay soft and hydrated even with frequent washing, making it perfect for busy lifestyles."
+                  linkTo="https://handly-wbs.webflow.io/product/freshcrisp-hand-wash"
+                />
+                <ProductCard
+                  id="velvetclean-hand-wash"
+                  name="Velvetclean hand wash"
+                  image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/6622359994a9f767467f0509_product-image-03.jpg"
+                  hoverImage="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/66190e6ea0abc1a95b2d1d94_instagram-image-05.jpg"
+                  description="Velvetclean hand wash delivers luxurious cleansing with an ultra-smooth, velvety texture. This premium formula combines silk proteins and shea butter to create a rich, creamy lather that pampers your skin while providing deep cleansing action. The elegant floral fragrance leaves a sophisticated scent that lingers delicately on your hands. Dermatologist-approved and enriched with anti-aging properties, this hand wash transforms daily handwashing into a spa-like experience."
+                  linkTo="https://handly-wbs.webflow.io/product/velvetclean-hand-wash"
+                />
+                <ProductCard
+                  id="refreshrinse-hand-wash"
+                  name="Refreshrinse hand wash"
+                  image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/662235dad1b814ae15864300_product-image-06.jpg"
+                  hoverImage="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/65fbf744c43eb79a541fec5a_product-hover-05.jpg"
+                  description="Refreshrinse hand wash offers the perfect balance of effective cleansing and gentle care. Formulated with cooling menthol and eucalyptus extracts, this refreshing hand wash provides an instant boost of energy while removing impurities. The pH-balanced formula is ideal for all skin types and provides antibacterial protection without drying your hands. The revitalizing mint scent creates an instant feeling of cleanliness and freshness that lasts for hours."
+                  linkTo="https://handly-wbs.webflow.io/product/refreshrinse-hand-wash"
+                />
+                <ProductCard
+                  id="cleanscent-hand-wash"
+                  name="Cleanscent hand wash"
+                  image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/662235f3434322eac6a406f1_product-image-05.jpg"
+                  hoverImage="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/65fbf755ba06eefad1ef33a7_product-hover-06.jpg"
+                  description="Cleanscent hand wash features a signature aromatic blend that elevates your handwashing routine. This premium formulation combines the finest botanical extracts with advanced cleansing technology to provide superior hygiene while maintaining skin health. The distinctive fragrance profile includes notes of lavender, bergamot, and white tea, creating a calming and sophisticated scent experience. Enriched with antioxidants and vitamins, this hand wash protects and nourishes your skin with every use."
+                  linkTo="https://handly-wbs.webflow.io/product/cleanscent-hand-wash"
+                />
+                <ProductCard
+                  id="clean-plus-hand-wash"
+                  name="Clean plus hand wash"
+                  image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/66223606cde825c4cfde2da4_product-image-07.jpg"
+                  hoverImage="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/65fbf768ea85400f354f68a9_product-hover-07.jpg"
+                  description="Clean Plus hand wash delivers enhanced cleansing power with added antibacterial protection. This advanced formula eliminates 99.99% of harmful bacteria and viruses while being gentle on your skin. Enriched with pro-vitamin B5 and glycerin, it provides deep moisturization and skin barrier protection. The clean, fresh scent is subtle yet long-lasting, making it perfect for professional environments and everyday use. Clinically tested and recommended by healthcare professionals."
+                  linkTo="https://handly-wbs.webflow.io/product/clean-plus-hand-wash"
+                />
+                <ProductCard
+                  id="zenguard-hand-wash"
+                  name="Zenguard hand wash"
+                  image="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/662236302c073d26c21a00ff_product-image-09.jpg"
+                  hoverImage="https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/65fbf7859ab5b855de666d51_product-hover-09.jpg"
+                  description="Zenguard hand wash provides ultimate protection with calming aromatherapy benefits. This unique formula combines powerful antimicrobial agents with stress-relieving essential oils including chamomile, sandalwood, and jasmine. The gentle yet effective cleansing action removes dirt and germs while the therapeutic fragrance promotes relaxation and well-being. Specially formulated for sensitive skin, this hand wash creates a zen-like experience that soothes both body and mind with every wash."
+                  linkTo="https://handly-wbs.webflow.io/product/zenguard-hand-wash"
+                />
               </div>
             </div>
           </div>
