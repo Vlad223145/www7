@@ -209,6 +209,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           }}
         >
           <div
+            data-image-container
             style={{
               borderBottomLeftRadius: "10px",
               borderBottomRightRadius: "10px",
@@ -221,13 +222,16 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               position: "relative",
               height: '600px'
             }}
+            onClick={handleImageClick}
             onMouseEnter={(e) => {
+              e.preventDefault();
               const hoverImg = e.currentTarget.querySelector('img:last-child') as HTMLImageElement;
               if (hoverImg) {
                 hoverImg.style.opacity = '1';
               }
             }}
             onMouseLeave={(e) => {
+              e.preventDefault();
               const hoverImg = e.currentTarget.querySelector('img:last-child') as HTMLImageElement;
               if (hoverImg) {
                 hoverImg.style.opacity = '0';
