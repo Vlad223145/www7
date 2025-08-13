@@ -162,13 +162,21 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   const handleCardClick = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-    setIsFlipped(!isFlipped);
+    if (e.target === e.currentTarget || (e.target as HTMLElement).closest('[data-image-container]')) {
+      setIsFlipped(!isFlipped);
+    }
   };
 
   const handleTryClick = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
     setShowViewer(true);
+  };
+
+  const handleImageClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsFlipped(!isFlipped);
   };
 
   const product = productsData[id];
