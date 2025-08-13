@@ -184,14 +184,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   return (
     <div
       role="listitem"
+      className="no-select"
       style={{
-        perspective: '1000px',
-        userSelect: 'none',
-        WebkitTouchCallout: 'none',
-        WebkitUserSelect: 'none',
-        KhtmlUserSelect: 'none',
-        MozUserSelect: 'none',
-        msUserSelect: 'none'
+        perspective: '1000px'
       }}
     >
       <div 
