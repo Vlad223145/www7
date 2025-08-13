@@ -229,11 +229,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               loading="eager"
               src={image}
               style={{
-                borderBottomLeftRadius: "10px",
-                borderBottomRightRadius: "10px",
                 borderRadius: "10px",
-                borderTopLeftRadius: "10px",
-                borderTopRightRadius: "10px",
                 display: "block",
                 height: "600px",
                 maxWidth: "100%",
@@ -249,11 +245,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               loading="eager"
               src={hoverImage}
               style={{
-                borderBottomLeftRadius: "10px",
-                borderBottomRightRadius: "10px",
                 borderRadius: "10px",
-                borderTopLeftRadius: "10px",
-                borderTopRightRadius: "10px",
                 bottom: "0%",
                 height: "600px",
                 left: "0%",
