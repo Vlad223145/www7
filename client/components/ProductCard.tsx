@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { RawImg } from './RawImg';
-import { ProductViewer } from './ProductViewer';
 
 interface Product {
   id: string;
