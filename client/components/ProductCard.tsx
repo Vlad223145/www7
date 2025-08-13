@@ -168,7 +168,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   const handleTryClick = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-    setShowViewer(true);
+    window.location.href = `/product/${id}`;
   };
 
   const handleImageClick = (e: React.MouseEvent) => {
