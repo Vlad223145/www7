@@ -22,13 +22,15 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
   const handleCardClick = (e: React.MouseEvent) => {
     e.preventDefault();
+    e.stopPropagation();
     setIsFlipped(!isFlipped);
   };
 
   const handleTryClick = (e: React.MouseEvent) => {
+    e.preventDefault();
     e.stopPropagation();
     if (linkTo) {
-      window.open(linkTo, '_blank');
+      window.location.href = linkTo;
     }
   };
 
