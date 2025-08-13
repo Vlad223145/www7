@@ -100,33 +100,28 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               alt="product-image"
               loading="eager"
               image={hoverImage}
-              css={{ 
-                borderBottomLeftRadius: "10px", 
-                borderBottomRightRadius: "10px", 
-                borderRadius: "10px", 
-                borderTopLeftRadius: "10px", 
-                borderTopRightRadius: "10px", 
-                bottom: "0%", 
-                cursor: "pointer", 
-                height: "600px", 
-                left: "0%", 
-                maxWidth: "100%", 
-                objectFit: "cover", 
-                opacity: "0", 
-                overflowClipMargin: "content-box", 
-                overflowX: "clip", 
-                overflowY: "clip", 
-                position: "absolute", 
-                right: "0%", 
-                top: "0%", 
-                verticalAlign: "middle", 
+              css={{
+                borderBottomLeftRadius: "10px",
+                borderBottomRightRadius: "10px",
+                borderRadius: "10px",
+                borderTopLeftRadius: "10px",
+                borderTopRightRadius: "10px",
+                bottom: "0%",
+                cursor: "pointer",
+                height: "600px",
+                left: "0%",
+                maxWidth: "100%",
+                objectFit: "cover",
+                opacity: "0",
+                overflowClipMargin: "content-box",
+                overflowX: "clip",
+                overflowY: "clip",
+                position: "absolute",
+                right: "0%",
+                top: "0%",
+                verticalAlign: "middle",
                 width: "100%",
                 transition: 'opacity 0.3s ease'
-              }}
-              style={{
-                ':hover': {
-                  opacity: 1
-                }
               }}
             />
           </div>
