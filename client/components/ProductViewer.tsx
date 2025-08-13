@@ -20,8 +20,19 @@ interface ProductViewerProps {
 }
 
 export const ProductViewer: React.FC<ProductViewerProps> = ({ product, onClose }) => {
+  React.useEffect(() => {
+    // Предотвращаем скролл на body когда модальное окно открыто
+    const body = document.body;
+    const originalOverflow = body.style.overflow;
+    body.style.overflow = 'hidden';
+
+    return () => {
+      body.style.overflow = originalOverflow;
+    };
+  }, []);
+
   return (
-    <div 
+    <div
       style={{
         position: 'fixed',
         top: 0,
