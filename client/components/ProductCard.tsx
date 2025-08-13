@@ -423,14 +423,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           </button>
         </div>
       </div>
-
-      {/* Product Viewer Modal */}
-      {showViewer && product && (
-        <ProductViewer
-          product={product}
-          onClose={() => setShowViewer(false)}
-        />
-      )}
     </div>
   );
 };
