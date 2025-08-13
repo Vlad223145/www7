@@ -162,9 +162,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   const handleCardClick = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-    if (e.target === e.currentTarget || (e.target as HTMLElement).closest('[data-image-container]')) {
-      setIsFlipped(!isFlipped);
-    }
+    // Убираем все логики - больше не используется
   };
 
   const handleTryClick = (e: React.MouseEvent) => {
@@ -177,6 +175,15 @@ export const ProductCard: React.FC<ProductCardProps> = ({
     e.preventDefault();
     e.stopPropagation();
     setIsFlipped(!isFlipped);
+  };
+
+  const handleImageHover = (e: React.MouseEvent, show: boolean) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const hoverImg = e.currentTarget.querySelector('img:last-child') as HTMLImageElement;
+    if (hoverImg) {
+      hoverImg.style.opacity = show ? '1' : '0';
+    }
   };
 
   const product = productsData[id];
