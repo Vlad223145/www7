@@ -338,9 +338,11 @@ const products: Record<string, Product> = {
 export default function ProductDetail() {
   const { productId } = useParams<{ productId: string }>();
   const product = productId ? products[productId] : null;
-  const { addToCart } = useCart();
+  const { addToCart, cart, isEmpty, clearCart } = useCart();
   const { showToast, ToastContainer } = useToast();
   const [quantity, setQuantity] = useState(1);
+
+  console.log('ProductDetail render - cart:', cart, 'isEmpty:', isEmpty);
 
   if (!product) {
     return (
