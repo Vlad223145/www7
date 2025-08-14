@@ -233,7 +233,7 @@ export const Cart: React.FC = () => {
                     </div>
                   </div>
 
-                  {/* Checkout Button */}
+                  {/* Place Order Button */}
                   <button
                     style={{
                       width: "100%",
@@ -245,7 +245,11 @@ export const Cart: React.FC = () => {
                       fontSize: "16px",
                       fontWeight: "bold",
                       cursor: "pointer",
-                      marginTop: "20px"
+                      marginTop: "20px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      gap: "10px"
                     }}
                     onMouseEnter={(e) => {
                       e.currentTarget.style.backgroundColor = "rgb(50, 50, 50)";
@@ -254,7 +258,10 @@ export const Cart: React.FC = () => {
                       e.currentTarget.style.backgroundColor = "rgb(0, 0, 0)";
                     }}
                   >
-                    Continue to Checkout
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M7 4V2C7 1.45 7.45 1 8 1H16C16.55 1 17 1.45 17 2V4H20C20.55 4 21 4.45 21 5S20.55 6 20 6H19V19C19 20.1 18.1 21 17 21H7C5.9 21 5 20.1 5 19V6H4C3.45 6 3 5.55 3 5S3.45 4 4 4H7ZM9 3V4H15V3H9ZM7 6V19H17V6H7Z"/>
+                    </svg>
+                    Place Order
                   </button>
                 </div>
               )}
