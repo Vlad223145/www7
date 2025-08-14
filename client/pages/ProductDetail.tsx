@@ -212,6 +212,8 @@ const products: Record<string, Product> = {
 export default function ProductDetail() {
   const { productId } = useParams<{ productId: string }>();
   const product = productId ? products[productId] : null;
+  const { addToCart } = useCart();
+  const { showToast, ToastContainer } = useToast();
 
   if (!product) {
     return (
