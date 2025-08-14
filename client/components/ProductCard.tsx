@@ -337,6 +337,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   linkTo,
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
+  const { addToCart } = useCart();
+  const { showToast } = useToast();
 
   const handleCardClick = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -347,7 +349,21 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   const handleTryClick = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-    window.location.href = `/product/${id}`;
+
+    const cartItem = {
+      id,
+      name,
+      image,
+      price: undefined // Можно добавить цену если нужно
+    };
+
+    const result = addToCart(cartItem);
+
+    if (result.success) {
+      showToast(`${name} added to cart!`, 'success');
+    } else {
+      showToast(result.message || 'Could not add to cart', 'error');
+    }
   };
 
   const handleImageClick = (e: React.MouseEvent) => {
