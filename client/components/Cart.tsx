@@ -6,8 +6,19 @@ export const Cart: React.FC = () => {
 
   return (
     <>
-      {/* Cart Icon */}
-      <div style={{ position: "relative" }}>
+      {/* Fixed Cart Icon */}
+      <div
+        style={{
+          position: "fixed",
+          top: "20px",
+          right: "20px",
+          zIndex: "1002",
+          background: "white",
+          borderRadius: "50%",
+          padding: "10px",
+          boxShadow: "0 2px 10px rgba(0,0,0,0.1)"
+        }}
+      >
         <button
           onClick={openCart}
           style={{
