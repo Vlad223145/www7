@@ -461,7 +461,6 @@ export default function ProductDetail() {
                 >
                   ← Back
                 </Link>
-                <Cart />
               </div>
             </div>
           </div>
