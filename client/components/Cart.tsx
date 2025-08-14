@@ -65,7 +65,7 @@ export const Cart: React.FC = () => {
                 fontWeight: "bold"
               }}
             >
-              1
+              {cart?.quantity || 1}
             </div>
           )}
         </button>
