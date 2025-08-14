@@ -658,6 +658,22 @@ export default function ProductDetail() {
                 </div>
               </div>
 
+              {/* Debug Section - Remove after testing */}
+              <div style={{
+                padding: "10px",
+                backgroundColor: "#f0f0f0",
+                borderRadius: "5px",
+                marginBottom: "20px",
+                fontSize: "12px"
+              }}>
+                <div>Debug Info:</div>
+                <div>Cart: {JSON.stringify(cart)}</div>
+                <div>Is Empty: {isEmpty ? 'Yes' : 'No'}</div>
+                <button onClick={clearCart} style={{ marginTop: "5px", padding: "5px 10px" }}>
+                  Clear Cart
+                </button>
+              </div>
+
               {/* Add to Cart */}
               <div
                 style={{ display: "flex", gap: "20px", marginBottom: "40px" }}
