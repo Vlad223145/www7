@@ -213,12 +213,21 @@ export const Cart: React.FC = () => {
                           style={{
                             fontSize: "14px",
                             color: "rgb(100, 100, 100)",
-                            margin: "0 0 10px 0"
+                            margin: "0 0 5px 0"
                           }}
                         >
                           {cart!.price}
                         </p>
                       )}
+                      <p
+                        style={{
+                          fontSize: "14px",
+                          color: "rgb(100, 100, 100)",
+                          margin: "0 0 10px 0"
+                        }}
+                      >
+                        Quantity: {cart!.quantity || 1}
+                      </p>
                       <button
                         onClick={removeFromCart}
                         style={{
