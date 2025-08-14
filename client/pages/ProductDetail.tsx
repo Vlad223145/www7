@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { RawImg, Cart, useToast } from "@/components";
 import { useCart } from "@/hooks/useCart";
+import { useState } from "react";
 
 interface Product {
   id: string;
@@ -339,6 +340,7 @@ export default function ProductDetail() {
   const product = productId ? products[productId] : null;
   const { addToCart } = useCart();
   const { showToast, ToastContainer } = useToast();
+  const [quantity, setQuantity] = useState(1);
 
   if (!product) {
     return (
@@ -661,14 +663,17 @@ export default function ProductDetail() {
               >
                 <input
                   type="number"
-                  defaultValue="1"
+                  value={quantity}
+                  onChange={(e) => setQuantity(Math.max(1, parseInt(e.target.value) || 1))}
                   min="1"
+                  max="10"
                   style={{
                     width: "80px",
                     padding: "15px",
                     borderRadius: "10px",
                     border: "2px solid rgb(230, 230, 230)",
                     textAlign: "center",
+                    fontSize: "16px"
                   }}
                 />
                 <button
@@ -677,13 +682,14 @@ export default function ProductDetail() {
                       id: product.id,
                       name: product.name,
                       image: product.image,
-                      price: product.price
+                      price: product.price,
+                      quantity: quantity
                     };
 
                     const result = addToCart(cartItem);
 
                     if (result.success) {
-                      showToast(`${product.name} added to cart!`, 'success');
+                      showToast(`${quantity} x ${product.name} added to cart!`, 'success');
                     } else {
                       showToast(result.message || 'Could not add to cart', 'error');
                     }
@@ -698,6 +704,13 @@ export default function ProductDetail() {
                     fontSize: "18px",
                     fontWeight: "bold",
                     cursor: "pointer",
+                    transition: "all 0.2s ease"
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = "rgb(50, 50, 50)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = "rgb(0, 0, 0)";
                   }}
                 >
                   Add to Cart
