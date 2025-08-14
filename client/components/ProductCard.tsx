@@ -349,21 +349,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   const handleTryClick = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-
-    const cartItem = {
-      id,
-      name,
-      image,
-      price: undefined
-    };
-
-    const result = addToCart(cartItem);
-
-    if (result.success) {
-      showToast(`${name} added to cart!`, 'success');
-    } else {
-      showToast(result.message || 'Could not add to cart', 'error');
-    }
+    // Navigate to product detail page
+    window.location.href = `/product/${id}`;
   };
 
   const handleImageClick = (e: React.MouseEvent) => {
