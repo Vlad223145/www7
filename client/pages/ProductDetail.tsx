@@ -537,6 +537,22 @@ export default function ProductDetail() {
                   }}
                 />
                 <button
+                  onClick={() => {
+                    const cartItem = {
+                      id: product.id,
+                      name: product.name,
+                      image: product.image,
+                      price: product.price
+                    };
+
+                    const result = addToCart(cartItem);
+
+                    if (result.success) {
+                      showToast(`${product.name} added to cart!`, 'success');
+                    } else {
+                      showToast(result.message || 'Could not add to cart', 'error');
+                    }
+                  }}
                   style={{
                     flex: "1",
                     backgroundColor: "rgb(0, 0, 0)",
@@ -549,7 +565,7 @@ export default function ProductDetail() {
                     cursor: "pointer",
                   }}
                 >
-                  Try
+                  Add to Cart
                 </button>
               </div>
 
