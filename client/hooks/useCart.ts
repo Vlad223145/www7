@@ -5,6 +5,7 @@ interface CartItem {
   name: string;
   image: string;
   price?: string;
+  quantity?: number;
 }
 
 interface CartState {
@@ -42,8 +43,17 @@ export function useCart() {
         message: "You can only have one product in your cart. Please remove the current item first."
       };
     }
-    
-    setCart(prev => ({ ...prev, item: product, isOpen: true }));
+
+    // If same product, update quantity
+    if (cart.item && cart.item.id === product.id) {
+      const newQuantity = (cart.item.quantity || 1) + (product.quantity || 1);
+      const updatedItem = { ...cart.item, quantity: newQuantity };
+      setCart(prev => ({ ...prev, item: updatedItem, isOpen: true }));
+    } else {
+      // Add new product
+      setCart(prev => ({ ...prev, item: { ...product, quantity: product.quantity || 1 }, isOpen: true }));
+    }
+
     return { success: true };
   };
 
