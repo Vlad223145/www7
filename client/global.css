@@ -149,7 +149,7 @@
 
   /* МОБИЛЬНАЯ АДАПТИВНОСТЬ */
   @media (max-width: 768px) {
-    /* Основные контейнеры */
+    /* Основные контейнер�� */
     [style*="paddingLeft: \"150px\""],
     [style*="paddingRight: \"150px\""] {
       padding-left: 20px !important;
@@ -199,7 +199,7 @@
       display: block !important;
     }
 
-    /* Секция с виде�� */
+    /* Секция с ви��е�� */
     [style*="height: \"880px\""] {
       height: 400px !important;
     }
@@ -304,6 +304,14 @@
       margin-left: 20px !important;
       margin-right: 20px !important;
     }
+  }
+
+  /* Cart positioning for mobile */
+  [style*="position: \"fixed\""][style*="top: \"20px\""][style*="right: \"20px\""] {
+    position: fixed !important;
+    top: 15px !important;
+    right: 15px !important;
+    z-index: 1002 !important;
   }
 
   /* Дополнительная адаптивность для маленьких экранов */
