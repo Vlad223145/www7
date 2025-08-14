@@ -113,9 +113,31 @@
     -webkit-tap-highlight-color: transparent;
   }
 
-  /* Плавный скролл */
+  /* Устранение дергания страницы */
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+  }
+
+  /* Предотвращение дергания при переходах */
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  /* Фиксация позиции при загрузке */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Плавные переходы */
+  a, button {
+    transition: all 0.3s ease;
+  }
+
+  a:focus, button:focus {
+    outline: 2px solid #0066cc;
+    outline-offset: 2px;
   }
 
   /* Предотвращение выделения текста */
@@ -167,7 +189,7 @@
       text-align: center !important;
     }
 
-    /* Навигаци�� */
+    /* Навигация */
     nav[role="navigation"] {
       display: none !important;
     }
@@ -177,7 +199,7 @@
       display: block !important;
     }
 
-    /* Секция с видео */
+    /* Секция с виде�� */
     [style*="height: \"880px\""] {
       height: 400px !important;
     }
@@ -276,7 +298,7 @@
       max-width: 100% !important;
     }
 
-    /* Скрытие элементов ��а мобильных */
+    /* Скрытие элементов на мобильных */
     [style*="marginLeft: \"150px\""],
     [style*="marginRight: \"150px\""] {
       margin-left: 20px !important;
