@@ -515,19 +515,19 @@ export default function ProductDetail() {
                 >
                   Size
                 </label>
-                <select
+                <div
                   style={{
                     width: "100%",
                     padding: "15px",
                     borderRadius: "10px",
                     border: "2px solid rgb(230, 230, 230)",
                     fontSize: "16px",
+                    backgroundColor: "#f8f8f8",
+                    color: "#666"
                   }}
                 >
-                  <option>200ml</option>
-                  <option>500ml</option>
-                  <option>700ml</option>
-                </select>
+                  300ml
+                </div>
               </div>
 
               {/* Add to Cart */}
