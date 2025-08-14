@@ -98,6 +98,7 @@ export function useCart() {
     isEmpty,
     addToCart,
     removeFromCart,
+    clearCart,
     openCart,
     closeCart
   };
