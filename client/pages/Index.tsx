@@ -652,7 +652,6 @@ export default function Index() {
                     </div>
                   </div>
                 </div>
-                <Cart />
                 <div
                   aria-label="menu"
                   role="button"
@@ -3202,6 +3201,7 @@ export default function Index() {
         </a>
         <div style={{ display: "none" }}></div>
       </div>
+      <Cart />
       <ToastContainer />
     </>
   );
