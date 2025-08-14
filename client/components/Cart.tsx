@@ -4,6 +4,8 @@ import { useCart } from '@/hooks/useCart';
 export const Cart: React.FC = () => {
   const { cart, isOpen, isEmpty, removeFromCart, openCart, closeCart } = useCart();
 
+  console.log('Cart component render - cart:', cart, 'isEmpty:', isEmpty);
+
   return (
     <>
       {/* Fixed Cart Icon */}
