@@ -1,10 +1,11 @@
-import React from 'react';
-import { useCart } from '@/hooks/useCart';
+import React from "react";
+import { useCart } from "@/hooks/useCart";
 
 export const Cart: React.FC = () => {
-  const { cart, isOpen, isEmpty, removeFromCart, openCart, closeCart } = useCart();
+  const { cart, isOpen, isEmpty, removeFromCart, openCart, closeCart } =
+    useCart();
 
-  console.log('Cart component render - cart:', cart, 'isEmpty:', isEmpty);
+  console.log("Cart component render - cart:", cart, "isEmpty:", isEmpty);
 
   return (
     <>
@@ -18,7 +19,7 @@ export const Cart: React.FC = () => {
           background: "white",
           borderRadius: "50%",
           padding: "10px",
-          boxShadow: "0 2px 10px rgba(0,0,0,0.1)"
+          boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
         }}
       >
         <button
@@ -28,7 +29,7 @@ export const Cart: React.FC = () => {
             border: "none",
             cursor: "pointer",
             padding: "10px",
-            position: "relative"
+            position: "relative",
           }}
           aria-label={isEmpty ? "Open empty cart" : "Open cart"}
         >
@@ -43,10 +44,10 @@ export const Cart: React.FC = () => {
               maxWidth: "100%",
               verticalAlign: "middle",
               width: "24px",
-              height: "24px"
+              height: "24px",
             }}
           >
-            <path d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zM10 6a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2v10z"/>
+            <path d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zM10 6a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2v10z" />
           </svg>
           {/* Cart Badge */}
           {!isEmpty && (
@@ -64,7 +65,7 @@ export const Cart: React.FC = () => {
                 alignItems: "center",
                 justifyContent: "center",
                 fontSize: "10px",
-                fontWeight: "bold"
+                fontWeight: "bold",
               }}
             >
               {cart?.quantity || 1}
@@ -85,7 +86,7 @@ export const Cart: React.FC = () => {
             backgroundColor: "rgba(0, 0, 0, 0.5)",
             zIndex: 1000,
             display: "flex",
-            justifyContent: "flex-end"
+            justifyContent: "flex-end",
           }}
           onClick={closeCart}
         >
@@ -99,7 +100,7 @@ export const Cart: React.FC = () => {
               padding: "20px",
               overflowY: "auto",
               display: "flex",
-              flexDirection: "column"
+              flexDirection: "column",
             }}
             onClick={(e) => e.stopPropagation()}
           >
@@ -111,14 +112,14 @@ export const Cart: React.FC = () => {
                 alignItems: "center",
                 marginBottom: "20px",
                 paddingBottom: "15px",
-                borderBottom: "1px solid rgb(230, 230, 230)"
+                borderBottom: "1px solid rgb(230, 230, 230)",
               }}
             >
               <h6
                 style={{
                   fontSize: "20px",
                   fontWeight: "bold",
-                  margin: 0
+                  margin: 0,
                 }}
               >
                 Your Cart
@@ -132,7 +133,7 @@ export const Cart: React.FC = () => {
                   cursor: "pointer",
                   fontSize: "24px",
                   padding: "5px",
-                  lineHeight: 1
+                  lineHeight: 1,
                 }}
               >
                 ×
@@ -150,7 +151,7 @@ export const Cart: React.FC = () => {
                     justifyContent: "center",
                     height: "100%",
                     textAlign: "center",
-                    padding: "40px 20px"
+                    padding: "40px 20px",
                   }}
                 >
                   <img
@@ -164,14 +165,14 @@ export const Cart: React.FC = () => {
                       width: "120px",
                       height: "120px",
                       marginBottom: "20px",
-                      opacity: 0.5
+                      opacity: 0.5,
                     }}
                   />
                   <p
                     style={{
                       marginBottom: "10px",
                       textAlign: "center",
-                      color: "rgb(100, 100, 100)"
+                      color: "rgb(100, 100, 100)",
                     }}
                   >
                     No products inside your cart.
@@ -187,7 +188,7 @@ export const Cart: React.FC = () => {
                       padding: "15px",
                       border: "1px solid rgb(230, 230, 230)",
                       borderRadius: "10px",
-                      marginBottom: "20px"
+                      marginBottom: "20px",
                     }}
                   >
                     <img
@@ -197,7 +198,7 @@ export const Cart: React.FC = () => {
                         width: "80px",
                         height: "80px",
                         objectFit: "cover",
-                        borderRadius: "8px"
+                        borderRadius: "8px",
                       }}
                     />
                     <div style={{ flex: 1 }}>
@@ -205,7 +206,7 @@ export const Cart: React.FC = () => {
                         style={{
                           fontSize: "16px",
                           fontWeight: "bold",
-                          margin: "0 0 5px 0"
+                          margin: "0 0 5px 0",
                         }}
                       >
                         {cart!.name}
@@ -215,7 +216,7 @@ export const Cart: React.FC = () => {
                           style={{
                             fontSize: "14px",
                             color: "rgb(100, 100, 100)",
-                            margin: "0 0 5px 0"
+                            margin: "0 0 5px 0",
                           }}
                         >
                           {cart!.price}
@@ -225,7 +226,7 @@ export const Cart: React.FC = () => {
                         style={{
                           fontSize: "14px",
                           color: "rgb(100, 100, 100)",
-                          margin: "0 0 10px 0"
+                          margin: "0 0 10px 0",
                         }}
                       >
                         Quantity: {cart!.quantity || 1}
@@ -239,7 +240,7 @@ export const Cart: React.FC = () => {
                           borderRadius: "5px",
                           padding: "5px 10px",
                           fontSize: "12px",
-                          cursor: "pointer"
+                          cursor: "pointer",
                         }}
                       >
                         Remove
@@ -263,7 +264,7 @@ export const Cart: React.FC = () => {
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
-                      gap: "10px"
+                      gap: "10px",
                     }}
                     onMouseEnter={(e) => {
                       e.currentTarget.style.backgroundColor = "rgb(50, 50, 50)";
@@ -272,8 +273,13 @@ export const Cart: React.FC = () => {
                       e.currentTarget.style.backgroundColor = "rgb(0, 0, 0)";
                     }}
                   >
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M7 4V2C7 1.45 7.45 1 8 1H16C16.55 1 17 1.45 17 2V4H20C20.55 4 21 4.45 21 5S20.55 6 20 6H19V19C19 20.1 18.1 21 17 21H7C5.9 21 5 20.1 5 19V6H4C3.45 6 3 5.55 3 5S3.45 4 4 4H7ZM9 3V4H15V3H9ZM7 6V19H17V6H7Z"/>
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M7 4V2C7 1.45 7.45 1 8 1H16C16.55 1 17 1.45 17 2V4H20C20.55 4 21 4.45 21 5S20.55 6 20 6H19V19C19 20.1 18.1 21 17 21H7C5.9 21 5 20.1 5 19V6H4C3.45 6 3 5.55 3 5S3.45 4 4 4H7ZM9 3V4H15V3H9ZM7 6V19H17V6H7Z" />
                     </svg>
                     Place Order
                   </button>

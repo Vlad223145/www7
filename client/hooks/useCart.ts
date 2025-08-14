@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 interface CartItem {
   id: string;
@@ -18,15 +18,15 @@ export function useCart() {
 
   // Load from localStorage on mount
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('handly_cart');
+    if (typeof window !== "undefined") {
+      const saved = localStorage.getItem("handly_cart");
       if (saved) {
         try {
           const parsedCart = JSON.parse(saved);
-          console.log('Loaded cart from localStorage:', parsedCart);
+          console.log("Loaded cart from localStorage:", parsedCart);
           setCart(parsedCart);
         } catch (error) {
-          console.error('Error parsing cart from localStorage:', error);
+          console.error("Error parsing cart from localStorage:", error);
         }
       }
     }
@@ -34,20 +34,23 @@ export function useCart() {
 
   // Сохраняем состояние в localStorage при изменении
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      console.log('Saving cart to localStorage:', cart);
-      localStorage.setItem('handly_cart', JSON.stringify(cart));
+    if (typeof window !== "undefined") {
+      console.log("Saving cart to localStorage:", cart);
+      localStorage.setItem("handly_cart", JSON.stringify(cart));
     }
   }, [cart]);
 
-  const addToCart = (product: CartItem): { success: boolean; message?: string } => {
-    console.log('addToCart called with:', product);
-    console.log('Current cart state:', cart);
+  const addToCart = (
+    product: CartItem,
+  ): { success: boolean; message?: string } => {
+    console.log("addToCart called with:", product);
+    console.log("Current cart state:", cart);
 
     if (cart.item && cart.item.id !== product.id) {
       return {
         success: false,
-        message: "You can only have one product in your cart. Please remove the current item first."
+        message:
+          "You can only have one product in your cart. Please remove the current item first.",
       };
     }
 
@@ -55,37 +58,37 @@ export function useCart() {
     if (cart.item && cart.item.id === product.id) {
       const newQuantity = (cart.item.quantity || 1) + (product.quantity || 1);
       const updatedItem = { ...cart.item, quantity: newQuantity };
-      console.log('Updating existing item:', updatedItem);
-      setCart(prev => ({ ...prev, item: updatedItem, isOpen: true }));
+      console.log("Updating existing item:", updatedItem);
+      setCart((prev) => ({ ...prev, item: updatedItem, isOpen: true }));
     } else {
       // Add new product
       const newItem = { ...product, quantity: product.quantity || 1 };
-      console.log('Adding new item:', newItem);
-      setCart(prev => ({ ...prev, item: newItem, isOpen: true }));
+      console.log("Adding new item:", newItem);
+      setCart((prev) => ({ ...prev, item: newItem, isOpen: true }));
     }
 
     return { success: true };
   };
 
   const removeFromCart = () => {
-    console.log('Removing item from cart');
-    setCart(prev => ({ ...prev, item: null }));
+    console.log("Removing item from cart");
+    setCart((prev) => ({ ...prev, item: null }));
   };
 
   const clearCart = () => {
-    console.log('Clearing cart');
+    console.log("Clearing cart");
     setCart({ item: null, isOpen: false });
-    if (typeof window !== 'undefined') {
-      localStorage.removeItem('handly_cart');
+    if (typeof window !== "undefined") {
+      localStorage.removeItem("handly_cart");
     }
   };
 
   const openCart = () => {
-    setCart(prev => ({ ...prev, isOpen: true }));
+    setCart((prev) => ({ ...prev, isOpen: true }));
   };
 
   const closeCart = () => {
-    setCart(prev => ({ ...prev, isOpen: false }));
+    setCart((prev) => ({ ...prev, isOpen: false }));
   };
 
   const hasItem = !!cart.item;
@@ -100,6 +103,6 @@ export function useCart() {
     removeFromCart,
     clearCart,
     openCart,
-    closeCart
+    closeCart,
   };
 }

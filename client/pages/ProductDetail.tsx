@@ -342,7 +342,7 @@ export default function ProductDetail() {
   const { showToast, ToastContainer } = useToast();
   const [quantity, setQuantity] = useState(1);
 
-  console.log('ProductDetail render - cart:', cart, 'isEmpty:', isEmpty);
+  console.log("ProductDetail render - cart:", cart, "isEmpty:", isEmpty);
 
   if (!product) {
     return (
@@ -469,22 +469,24 @@ export default function ProductDetail() {
         </div>
 
         {/* Product Detail Content */}
-        <div style={{
-          padding: "100px 150px",
-          '@media (max-width: 768px)': {
-            padding: "50px 20px"
-          }
-        }}>
+        <div
+          style={{
+            padding: "100px 150px",
+            "@media (max-width: 768px)": {
+              padding: "50px 20px",
+            },
+          }}
+        >
           <div
             style={{
               display: "grid",
               gridTemplate: "auto / 1fr 1fr",
               gap: "80px",
               alignItems: "start",
-              '@media (max-width: 768px)': {
+              "@media (max-width: 768px)": {
                 gridTemplate: "auto / 1fr",
-                gap: "40px"
-              }
+                gap: "40px",
+              },
             }}
           >
             {/* Product Images */}
@@ -651,7 +653,7 @@ export default function ProductDetail() {
                     border: "2px solid rgb(230, 230, 230)",
                     fontSize: "16px",
                     backgroundColor: "#f8f8f8",
-                    color: "#666"
+                    color: "#666",
                   }}
                 >
                   300ml
@@ -659,17 +661,22 @@ export default function ProductDetail() {
               </div>
 
               {/* Debug Section - Remove after testing */}
-              <div style={{
-                padding: "10px",
-                backgroundColor: "#f0f0f0",
-                borderRadius: "5px",
-                marginBottom: "20px",
-                fontSize: "12px"
-              }}>
+              <div
+                style={{
+                  padding: "10px",
+                  backgroundColor: "#f0f0f0",
+                  borderRadius: "5px",
+                  marginBottom: "20px",
+                  fontSize: "12px",
+                }}
+              >
                 <div>Debug Info:</div>
                 <div>Cart: {JSON.stringify(cart)}</div>
-                <div>Is Empty: {isEmpty ? 'Yes' : 'No'}</div>
-                <button onClick={clearCart} style={{ marginTop: "5px", padding: "5px 10px" }}>
+                <div>Is Empty: {isEmpty ? "Yes" : "No"}</div>
+                <button
+                  onClick={clearCart}
+                  style={{ marginTop: "5px", padding: "5px 10px" }}
+                >
                   Clear Cart
                 </button>
               </div>
@@ -681,7 +688,9 @@ export default function ProductDetail() {
                 <input
                   type="number"
                   value={quantity}
-                  onChange={(e) => setQuantity(Math.max(1, parseInt(e.target.value) || 1))}
+                  onChange={(e) =>
+                    setQuantity(Math.max(1, parseInt(e.target.value) || 1))
+                  }
                   min="1"
                   max="10"
                   style={{
@@ -690,7 +699,7 @@ export default function ProductDetail() {
                     borderRadius: "10px",
                     border: "2px solid rgb(230, 230, 230)",
                     textAlign: "center",
-                    fontSize: "16px"
+                    fontSize: "16px",
                   }}
                 />
                 <button
@@ -700,15 +709,21 @@ export default function ProductDetail() {
                       name: product.name,
                       image: product.image,
                       price: product.price,
-                      quantity: quantity
+                      quantity: quantity,
                     };
 
                     const result = addToCart(cartItem);
 
                     if (result.success) {
-                      showToast(`${quantity} x ${product.name} added to cart!`, 'success');
+                      showToast(
+                        `${quantity} x ${product.name} added to cart!`,
+                        "success",
+                      );
                     } else {
-                      showToast(result.message || 'Could not add to cart', 'error');
+                      showToast(
+                        result.message || "Could not add to cart",
+                        "error",
+                      );
                     }
                   }}
                   style={{
@@ -721,7 +736,7 @@ export default function ProductDetail() {
                     fontSize: "18px",
                     fontWeight: "bold",
                     cursor: "pointer",
-                    transition: "all 0.2s ease"
+                    transition: "all 0.2s ease",
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.backgroundColor = "rgb(50, 50, 50)";

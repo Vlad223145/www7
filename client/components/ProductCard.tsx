@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { useCart } from '@/hooks/useCart';
-import { useToast } from './Toast';
+import { useCart } from "@/hooks/useCart";
+import { useToast } from "./Toast";
 
 interface Product {
   id: string;
