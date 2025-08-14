@@ -35,6 +35,7 @@ export function useCart() {
   // Сохраняем состояние в localStorage при изменении
   useEffect(() => {
     if (typeof window !== 'undefined') {
+      console.log('Saving cart to localStorage:', cart);
       localStorage.setItem('handly_cart', JSON.stringify(cart));
     }
   }, [cart]);
