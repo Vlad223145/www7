@@ -68,7 +68,16 @@ export function useCart() {
   };
 
   const removeFromCart = () => {
+    console.log('Removing item from cart');
     setCart(prev => ({ ...prev, item: null }));
+  };
+
+  const clearCart = () => {
+    console.log('Clearing cart');
+    setCart({ item: null, isOpen: false });
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem('handly_cart');
+    }
   };
 
   const openCart = () => {
