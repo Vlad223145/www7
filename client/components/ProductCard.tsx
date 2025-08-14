@@ -349,14 +349,33 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   const handleTryClick = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-    // Navigate to product detail page
-    window.location.href = `/product/${id}`;
+
+    const cartItem = {
+      id,
+      name,
+      image,
+      price: undefined
+    };
+
+    const result = addToCart(cartItem);
+
+    if (result.success) {
+      showToast(`${name} added to cart!`, 'success');
+    } else {
+      showToast(result.message || 'Could not add to cart', 'error');
+    }
   };
 
   const handleImageClick = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-    setIsFlipped(!isFlipped);
+    if (isFlipped) {
+      // If flipped, navigate to product page
+      window.location.href = `/product/${id}`;
+    } else {
+      // If not flipped, flip to show description
+      setIsFlipped(true);
+    }
   };
 
   const handleImageHover = (e: React.MouseEvent, show: boolean) => {
