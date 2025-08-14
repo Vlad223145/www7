@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
-import { RawImg } from "@/components";
+import { RawImg, Cart, useToast } from "@/components";
+import { useCart } from "@/hooks/useCart";
 
 interface Product {
   id: string;
