@@ -14,20 +14,23 @@ interface CartState {
 }
 
 export function useCart() {
-  const [cart, setCart] = useState<CartState>(() => {
-    // Загружаем состояние корзины из localStorage
+  const [cart, setCart] = useState<CartState>({ item: null, isOpen: false });
+
+  // Load from localStorage on mount
+  useEffect(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem('handly_cart');
       if (saved) {
         try {
-          return JSON.parse(saved);
-        } catch {
-          return { item: null, isOpen: false };
+          const parsedCart = JSON.parse(saved);
+          console.log('Loaded cart from localStorage:', parsedCart);
+          setCart(parsedCart);
+        } catch (error) {
+          console.error('Error parsing cart from localStorage:', error);
         }
       }
     }
-    return { item: null, isOpen: false };
-  });
+  }, []);
 
   // Сохраняем состояние в localStorage при изменении
   useEffect(() => {
