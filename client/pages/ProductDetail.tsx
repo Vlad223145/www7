@@ -207,6 +207,131 @@ const products: Record<string, Product> = {
       "Natural cooling agents",
     ],
   },
+  "cleanscent-hand-wash": {
+    id: "cleanscent-hand-wash",
+    name: "Cleanscent hand wash",
+    price: "$ 55.00 USD",
+    image:
+      "https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/662235f3434322eac6a406f1_product-image-05.jpg",
+    hoverImage:
+      "https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/65fbf755ba06eefad1ef33a7_product-hover-06.jpg",
+    description:
+      "Premium aromatic hand wash featuring signature botanical blend that elevates your handwashing routine with luxurious fragrance.",
+    composition:
+      "Aqua, Sodium Laureth Sulfate, Lavandula Angustifolia Oil, Citrus Bergamia Peel Oil, Camellia Sinensis Extract, Natural Fragrance",
+    effects:
+      "Superior cleansing with aromatherapy benefits. The distinctive fragrance promotes relaxation while providing effective antimicrobial protection.",
+    usage:
+      "Apply to wet hands, enjoy the aromatic experience while lathering for 20 seconds, rinse thoroughly for lasting fragrance.",
+    ingredients: [
+      "Lavender oil",
+      "Bergamot extract",
+      "White tea",
+      "Botanical aromatics",
+      "Essential oil blend",
+    ],
+    features: [
+      "Signature aromatics",
+      "Premium botanicals",
+      "Relaxing fragrance",
+      "Antimicrobial action",
+      "Luxury experience",
+    ],
+  },
+  "clean-plus-hand-wash": {
+    id: "clean-plus-hand-wash",
+    name: "Clean plus hand wash",
+    price: "$ 35.00 USD",
+    image:
+      "https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/66223606cde825c4cfde2da4_product-image-07.jpg",
+    hoverImage:
+      "https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/65fbf768ea85400f354f68a9_product-hover-07.jpg",
+    description:
+      "Enhanced cleansing power with added antibacterial protection. This advanced formula eliminates 99.99% of harmful bacteria.",
+    composition:
+      "Aqua, Sodium Cocoyl Isethionate, Triclosan, Pro-vitamin B5, Glycerin, Citric Acid, Natural Preservatives",
+    effects:
+      "Enhanced antibacterial protection that eliminates harmful pathogens while maintaining skin health. Pro-vitamin B5 strengthens the skin barrier.",
+    usage:
+      "Apply to wet hands, work into rich foam for 20-30 seconds for maximum protection, rinse completely with water.",
+    ingredients: [
+      "Pro-vitamin B5",
+      "Antibacterial agents",
+      "Skin conditioners",
+      "Protective compounds",
+      "Barrier enhancers",
+    ],
+    features: [
+      "99.99% germ protection",
+      "Professional strength",
+      "Skin barrier support",
+      "Clinical grade",
+      "Healthcare approved",
+    ],
+  },
+  "zenguard-hand-wash": {
+    id: "zenguard-hand-wash",
+    name: "Zenguard hand wash",
+    price: "$ 65.00 USD",
+    image:
+      "https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/662236302c073d26c21a00ff_product-image-09.jpg",
+    hoverImage:
+      "https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/65fbf7859ab5b855de666d51_product-hover-09.jpg",
+    description:
+      "Ultimate protection with calming aromatherapy benefits. This unique formula combines powerful antimicrobial agents with stress-relieving oils.",
+    composition:
+      "Aqua, Decyl Glucoside, Chamomilla Recutita Extract, Santalum Album Oil, Jasminum Officinale Extract, Natural Preservatives",
+    effects:
+      "Comprehensive protection with therapeutic aromatherapy. Reduces stress while providing effective cleansing and antimicrobial action.",
+    usage:
+      "Dispense into hands, breathe in the calming aroma while lathering gently, rinse for clean, relaxed hands.",
+    ingredients: [
+      "Chamomile extract",
+      "Sandalwood oil",
+      "Jasmine essence",
+      "Calming botanicals",
+      "Stress-relief blend",
+    ],
+    features: [
+      "Aromatherapy benefits",
+      "Stress relief",
+      "Calming properties",
+      "Natural protection",
+      "Zen experience",
+    ],
+  },
+  "purelux-hand-wash": {
+    id: "purelux-hand-wash",
+    name: "Purelux hand wash",
+    price: "$ 85.00 USD",
+    originalPrice: "$ 100.00 USD",
+    image:
+      "https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/66223551115d6051274fb427_product-image-01.jpg",
+    hoverImage:
+      "https://cdn.prod.website-files.com/65fbb5117e4ee1d7a1fe121f/66223551115d6051274fb427_product-image-01.jpg",
+    description:
+      "Pinnacle of luxury hand care, combining premium ingredients with exceptional performance. This exclusive formula features rare botanical extracts.",
+    composition:
+      "Aqua, Premium Surfactants, Silk Amino Acids, Gold Particles, Rare Botanical Extracts, Luxury Fragrance Blend",
+    effects:
+      "Ultimate luxury cleansing with precious ingredients. Gold particles provide gentle exfoliation while silk amino acids deliver unparalleled softness.",
+    usage:
+      "Apply to hands as a luxurious ritual, massage gently to activate precious ingredients, rinse for an extraordinary experience.",
+    ingredients: [
+      "Silk amino acids",
+      "Gold particles",
+      "Rare botanicals",
+      "Precious oils",
+      "Luxury essences",
+    ],
+    features: [
+      "Luxury formulation",
+      "Gold-infused",
+      "Silk proteins",
+      "Rare ingredients",
+      "Premium experience",
+    ],
+  },
 };
 
 export default function ProductDetail() {
