@@ -341,13 +341,22 @@ export default function ProductDetail() {
         </div>
 
         {/* Product Detail Content */}
-        <div style={{ padding: "100px 150px" }}>
+        <div style={{
+          padding: "100px 150px",
+          '@media (max-width: 768px)': {
+            padding: "50px 20px"
+          }
+        }}>
           <div
             style={{
               display: "grid",
               gridTemplate: "auto / 1fr 1fr",
               gap: "80px",
               alignItems: "start",
+              '@media (max-width: 768px)': {
+                gridTemplate: "auto / 1fr",
+                gap: "40px"
+              }
             }}
           >
             {/* Product Images */}
