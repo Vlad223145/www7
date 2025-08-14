@@ -2,6 +2,8 @@ import { RawImg, CustomCode, ProductCard, Cart, useToast } from "@/components";
 import { Link } from "react-router-dom";
 
 export default function Index() {
+  const { ToastContainer } = useToast();
+
   return (
     <>
       <title
