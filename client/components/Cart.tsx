@@ -5,6 +5,11 @@ export const Cart: React.FC = () => {
   const { cart, isOpen, isEmpty, removeFromCart, openCart, closeCart } =
     useCart();
 
+  console.log("🎪 CART COMPONENT RENDER");
+  console.log("cart:", cart);
+  console.log("isEmpty:", isEmpty);
+  console.log("isOpen:", isOpen);
+
   return (
     <>
       {/* Fixed Cart Icon */}
