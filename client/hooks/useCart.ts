@@ -55,14 +55,14 @@ export function useCart() {
     }
   }, []);
 
-  const addToCart = (
+  const addToCart = useCallback((
     product: CartItem,
   ): { success: boolean; message?: string } => {
     console.log("🛒 ADD TO CART CALLED");
     console.log("Product:", product);
-    console.log("Current cart state:", cart);
+    console.log("Current global cart state:", globalCartState);
 
-    if (cart.item && cart.item.id !== product.id) {
+    if (globalCartState.item && globalCartState.item.id !== product.id) {
       console.log("❌ Different product in cart, rejecting");
       return {
         success: false,
@@ -72,47 +72,44 @@ export function useCart() {
     }
 
     // If same product, update quantity
-    if (cart.item && cart.item.id === product.id) {
-      const newQuantity = (cart.item.quantity || 1) + (product.quantity || 1);
-      const updatedItem = { ...cart.item, quantity: newQuantity };
+    if (globalCartState.item && globalCartState.item.id === product.id) {
+      const newQuantity = (globalCartState.item.quantity || 1) + (product.quantity || 1);
+      const updatedItem = { ...globalCartState.item, quantity: newQuantity };
       console.log("🔄 Updating existing item:", updatedItem);
-      setCart((prev) => {
-        const newState = { ...prev, item: updatedItem, isOpen: true };
-        console.log("New cart state will be:", newState);
-        return newState;
-      });
+      updateGlobalCart({ ...globalCartState, item: updatedItem, isOpen: true });
     } else {
       // Add new product
       const newItem = { ...product, quantity: product.quantity || 1 };
       console.log("➕ Adding new item:", newItem);
-      setCart((prev) => {
-        const newState = { ...prev, item: newItem, isOpen: true };
-        console.log("New cart state will be:", newState);
-        return newState;
-      });
+      updateGlobalCart({ ...globalCartState, item: newItem, isOpen: true });
     }
 
+    console.log("✅ Cart updated successfully");
     return { success: true };
-  };
+  }, []);
 
-  const removeFromCart = () => {
-    setCart((prev) => ({ ...prev, item: null }));
-  };
+  const removeFromCart = useCallback(() => {
+    console.log("🗑️ Removing item from cart");
+    updateGlobalCart({ ...globalCartState, item: null });
+  }, []);
 
-  const clearCart = () => {
-    setCart({ item: null, isOpen: false });
+  const clearCart = useCallback(() => {
+    console.log("🧹 Clearing cart");
+    updateGlobalCart({ item: null, isOpen: false });
     if (typeof window !== "undefined") {
       localStorage.removeItem("handly_cart");
     }
-  };
+  }, []);
 
-  const openCart = () => {
-    setCart((prev) => ({ ...prev, isOpen: true }));
-  };
+  const openCart = useCallback(() => {
+    console.log("👁️ Opening cart");
+    updateGlobalCart({ ...globalCartState, isOpen: true });
+  }, []);
 
-  const closeCart = () => {
-    setCart((prev) => ({ ...prev, isOpen: false }));
-  };
+  const closeCart = useCallback(() => {
+    console.log("✖️ Closing cart");
+    updateGlobalCart({ ...globalCartState, isOpen: false });
+  }, []);
 
   const hasItem = !!cart.item;
   const isEmpty = !cart.item;
