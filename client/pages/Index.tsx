@@ -1,4 +1,4 @@
-import { RawImg, CustomCode, ProductCard, Cart, useToast } from "@/components";
+import { RawImg, CustomCode, ProductCard, useToast } from "@/components";
 import { Link } from "react-router-dom";
 
 export default function Index() {
@@ -3201,7 +3201,6 @@ export default function Index() {
         </a>
         <div style={{ display: "none" }}></div>
       </div>
-      <Cart />
       <ToastContainer />
     </>
   );
