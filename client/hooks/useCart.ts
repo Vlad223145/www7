@@ -34,6 +34,9 @@ export function useCart() {
   useEffect(() => {
     if (typeof window !== "undefined") {
       localStorage.setItem("handly_cart", JSON.stringify(cart));
+      // Add to window for debugging
+      (window as any).debugCart = cart;
+      console.log("💾 Saving cart to localStorage:", cart);
     }
   }, [cart]);
 
