@@ -338,11 +338,9 @@ const products: Record<string, Product> = {
 export default function ProductDetail() {
   const { productId } = useParams<{ productId: string }>();
   const product = productId ? products[productId] : null;
-  const { addToCart, cart, isEmpty, clearCart } = useCart();
+  const { addToCart } = useCart();
   const { showToast, ToastContainer } = useToast();
   const [quantity, setQuantity] = useState(1);
-
-  console.log("ProductDetail render - cart:", cart, "isEmpty:", isEmpty);
 
   if (!product) {
     return (
@@ -658,27 +656,6 @@ export default function ProductDetail() {
                 >
                   300ml
                 </div>
-              </div>
-
-              {/* Debug Section - Remove after testing */}
-              <div
-                style={{
-                  padding: "10px",
-                  backgroundColor: "#f0f0f0",
-                  borderRadius: "5px",
-                  marginBottom: "20px",
-                  fontSize: "12px",
-                }}
-              >
-                <div>Debug Info:</div>
-                <div>Cart: {JSON.stringify(cart)}</div>
-                <div>Is Empty: {isEmpty ? "Yes" : "No"}</div>
-                <button
-                  onClick={clearCart}
-                  style={{ marginTop: "5px", padding: "5px 10px" }}
-                >
-                  Clear Cart
-                </button>
               </div>
 
               {/* Add to Cart */}
