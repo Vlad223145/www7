@@ -40,7 +40,12 @@ export function useCart() {
   const addToCart = (
     product: CartItem,
   ): { success: boolean; message?: string } => {
+    console.log("🛒 ADD TO CART CALLED");
+    console.log("Product:", product);
+    console.log("Current cart state:", cart);
+
     if (cart.item && cart.item.id !== product.id) {
+      console.log("❌ Different product in cart, rejecting");
       return {
         success: false,
         message:
@@ -52,11 +57,21 @@ export function useCart() {
     if (cart.item && cart.item.id === product.id) {
       const newQuantity = (cart.item.quantity || 1) + (product.quantity || 1);
       const updatedItem = { ...cart.item, quantity: newQuantity };
-      setCart((prev) => ({ ...prev, item: updatedItem, isOpen: true }));
+      console.log("🔄 Updating existing item:", updatedItem);
+      setCart((prev) => {
+        const newState = { ...prev, item: updatedItem, isOpen: true };
+        console.log("New cart state will be:", newState);
+        return newState;
+      });
     } else {
       // Add new product
       const newItem = { ...product, quantity: product.quantity || 1 };
-      setCart((prev) => ({ ...prev, item: newItem, isOpen: true }));
+      console.log("➕ Adding new item:", newItem);
+      setCart((prev) => {
+        const newState = { ...prev, item: newItem, isOpen: true };
+        console.log("New cart state will be:", newState);
+        return newState;
+      });
     }
 
     return { success: true };
