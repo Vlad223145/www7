@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 interface CartItem {
   id: string;
@@ -13,32 +13,47 @@ interface CartState {
   isOpen: boolean;
 }
 
-export function useCart() {
-  const [cart, setCart] = useState<CartState>({ item: null, isOpen: false });
+// Global cart state to prevent multiple instances
+let globalCartState: CartState = { item: null, isOpen: false };
+let globalSetters: Array<(state: CartState) => void> = [];
 
-  // Load from localStorage on mount
+const updateGlobalCart = (newState: CartState) => {
+  globalCartState = newState;
+  globalSetters.forEach(setter => setter(newState));
+
+  // Save to localStorage
+  if (typeof window !== "undefined") {
+    localStorage.setItem("handly_cart", JSON.stringify(newState));
+    console.log("💾 Saving cart to localStorage:", newState);
+  }
+};
+
+export function useCart() {
+  const [cart, setCartState] = useState<CartState>(globalCartState);
+
+  // Register this setter
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    globalSetters.push(setCartState);
+    return () => {
+      globalSetters = globalSetters.filter(setter => setter !== setCartState);
+    };
+  }, []);
+
+  // Load from localStorage on initial mount
+  useEffect(() => {
+    if (typeof window !== "undefined" && globalCartState.item === null) {
       const saved = localStorage.getItem("handly_cart");
       if (saved) {
         try {
           const parsedCart = JSON.parse(saved);
-          setCart(parsedCart);
+          console.log("📦 Loading cart from localStorage:", parsedCart);
+          updateGlobalCart(parsedCart);
         } catch (error) {
+          console.error("Error parsing cart from localStorage:", error);
         }
       }
     }
   }, []);
-
-  // Сохраняем состояние в localStorage при изменении
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      localStorage.setItem("handly_cart", JSON.stringify(cart));
-      // Add to window for debugging
-      (window as any).debugCart = cart;
-      console.log("💾 Saving cart to localStorage:", cart);
-    }
-  }, [cart]);
 
   const addToCart = (
     product: CartItem,
