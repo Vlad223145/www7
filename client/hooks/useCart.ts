@@ -55,7 +55,7 @@ export function useCart() {
     }
   }, []);
 
-  const addToCart = useCallback((
+  const addToCart = (
     product: CartItem,
   ): { success: boolean; message?: string } => {
     console.log("🛒 ADD TO CART CALLED");
@@ -86,30 +86,30 @@ export function useCart() {
 
     console.log("✅ Cart updated successfully");
     return { success: true };
-  }, []);
+  };
 
-  const removeFromCart = useCallback(() => {
+  const removeFromCart = () => {
     console.log("🗑️ Removing item from cart");
     updateGlobalCart({ ...globalCartState, item: null });
-  }, []);
+  };
 
-  const clearCart = useCallback(() => {
+  const clearCart = () => {
     console.log("🧹 Clearing cart");
     updateGlobalCart({ item: null, isOpen: false });
     if (typeof window !== "undefined") {
       localStorage.removeItem("handly_cart");
     }
-  }, []);
+  };
 
-  const openCart = useCallback(() => {
+  const openCart = () => {
     console.log("👁️ Opening cart");
     updateGlobalCart({ ...globalCartState, isOpen: true });
-  }, []);
+  };
 
-  const closeCart = useCallback(() => {
+  const closeCart = () => {
     console.log("✖️ Closing cart");
     updateGlobalCart({ ...globalCartState, isOpen: false });
-  }, []);
+  };
 
   const hasItem = !!cart.item;
   const isEmpty = !cart.item;
