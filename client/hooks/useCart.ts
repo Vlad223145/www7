@@ -23,10 +23,8 @@ export function useCart() {
       if (saved) {
         try {
           const parsedCart = JSON.parse(saved);
-          console.log("Loaded cart from localStorage:", parsedCart);
           setCart(parsedCart);
         } catch (error) {
-          console.error("Error parsing cart from localStorage:", error);
         }
       }
     }
@@ -35,7 +33,6 @@ export function useCart() {
   // Сохраняем состояние в localStorage при изменении
   useEffect(() => {
     if (typeof window !== "undefined") {
-      console.log("Saving cart to localStorage:", cart);
       localStorage.setItem("handly_cart", JSON.stringify(cart));
     }
   }, [cart]);
@@ -66,12 +63,10 @@ export function useCart() {
   };
 
   const removeFromCart = () => {
-    console.log("Removing item from cart");
     setCart((prev) => ({ ...prev, item: null }));
   };
 
   const clearCart = () => {
-    console.log("Clearing cart");
     setCart({ item: null, isOpen: false });
     if (typeof window !== "undefined") {
       localStorage.removeItem("handly_cart");
