@@ -43,9 +43,6 @@ export function useCart() {
   const addToCart = (
     product: CartItem,
   ): { success: boolean; message?: string } => {
-    console.log("addToCart called with:", product);
-    console.log("Current cart state:", cart);
-
     if (cart.item && cart.item.id !== product.id) {
       return {
         success: false,
@@ -58,12 +55,10 @@ export function useCart() {
     if (cart.item && cart.item.id === product.id) {
       const newQuantity = (cart.item.quantity || 1) + (product.quantity || 1);
       const updatedItem = { ...cart.item, quantity: newQuantity };
-      console.log("Updating existing item:", updatedItem);
       setCart((prev) => ({ ...prev, item: updatedItem, isOpen: true }));
     } else {
       // Add new product
       const newItem = { ...product, quantity: product.quantity || 1 };
-      console.log("Adding new item:", newItem);
       setCart((prev) => ({ ...prev, item: newItem, isOpen: true }));
     }
 
