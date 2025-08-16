@@ -19,7 +19,7 @@ let globalSetters: Array<(state: CartState) => void> = [];
 
 const updateGlobalCart = (newState: CartState) => {
   globalCartState = newState;
-  globalSetters.forEach(setter => setter(newState));
+  globalSetters.forEach((setter) => setter(newState));
 
   // Save to localStorage
   if (typeof window !== "undefined") {
@@ -35,7 +35,7 @@ export function useCart() {
   useEffect(() => {
     globalSetters.push(setCartState);
     return () => {
-      globalSetters = globalSetters.filter(setter => setter !== setCartState);
+      globalSetters = globalSetters.filter((setter) => setter !== setCartState);
     };
   }, []);
 
@@ -73,7 +73,8 @@ export function useCart() {
 
     // If same product, update quantity
     if (globalCartState.item && globalCartState.item.id === product.id) {
-      const newQuantity = (globalCartState.item.quantity || 1) + (product.quantity || 1);
+      const newQuantity =
+        (globalCartState.item.quantity || 1) + (product.quantity || 1);
       const updatedItem = { ...globalCartState.item, quantity: newQuantity };
       console.log("🔄 Updating existing item:", updatedItem);
       updateGlobalCart({ ...globalCartState, item: updatedItem, isOpen: true });
