@@ -103,4 +103,255 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Простые правила без лагов */
+  img {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Устранение дергания страницы */
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+  }
+
+  /* Предотвращение дергания при переходах */
+  body {
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  /* Фиксация позиции при загрузке */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Плавные переходы */
+  a,
+  button {
+    transition: all 0.3s ease;
+  }
+
+  a:focus,
+  button:focus {
+    outline: 2px solid #0066cc;
+    outline-offset: 2px;
+  }
+
+  /* Предотвращение выделения текста */
+  .no-select {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+  }
+
+  /* МОБИЛЬНАЯ АДАПТИВНОСТЬ */
+  @media (max-width: 768px) {
+    /* Основные контейнер�� */
+    [style*='paddingLeft: "150px"'],
+    [style*='paddingRight: "150px"'] {
+      padding-left: 20px !important;
+      padding-right: 20px !important;
+    }
+
+    /* Заголовки */
+    [style*='fontSize: "70px"'] {
+      font-size: 36px !important;
+      line-height: 44px !important;
+    }
+
+    [style*='fontSize: "48px"'] {
+      font-size: 28px !important;
+      line-height: 34px !important;
+    }
+
+    [style*='fontSize: "54px"'] {
+      font-size: 32px !important;
+      line-height: 38px !important;
+    }
+
+    /* Гриды и колонки */
+    [style*='gridTemplate: "auto / 1fr 1fr 1fr"'] {
+      grid-template-columns: 1fr !important;
+      gap: 30px !important;
+    }
+
+    [style*='gridTemplate: "auto / 1fr 1fr"'] {
+      grid-template-columns: 1fr !important;
+      gap: 20px !important;
+    }
+
+    [style*='gridTemplate: "auto / 0.5fr 1.5fr 0.5fr"'] {
+      grid-template-columns: 1fr !important;
+      gap: 15px !important;
+      text-align: center !important;
+    }
+
+    /* Навигация */
+    nav[role="navigation"] {
+      display: none !important;
+    }
+
+    /* Мобильная навигация */
+    .mobile-nav {
+      display: block !important;
+    }
+
+    /* Секция с ви��е�� */
+    [style*='height: "880px"'] {
+      height: 400px !important;
+    }
+
+    /* Карточки продуктов */
+    [role="listitem"] [style*='height: "700px"'] {
+      height: auto !important;
+      min-height: 500px !important;
+    }
+
+    [role="listitem"] [style*='height: "600px"'] {
+      height: 300px !important;
+    }
+
+    /* Таймер блок */
+    [style*='fontSize: "64px"'] {
+      font-size: 32px !important;
+      line-height: 40px !important;
+    }
+
+    /* Кнопки */
+    [style*='padding: "18px 40px"'] {
+      padding: 12px 20px !important;
+      font-size: 16px !important;
+    }
+
+    /* Формы */
+    [style*='width: "80px"'] {
+      width: 60px !important;
+    }
+
+    /* Testimonials */
+    [style*='width: "150px"'][style*='height: "150px"'] {
+      width: 100px !important;
+      height: 100px !important;
+    }
+
+    /* Footer */
+    footer [style*='gridTemplate: "auto / 1fr 0.5fr 0.5fr 0.75fr 1fr"'] {
+      grid-template-columns: 1fr !important;
+      gap: 30px !important;
+      text-align: center !important;
+    }
+
+    /* Отступы и промежутки */
+    [style*='gap: "100px"'] {
+      gap: 30px !important;
+    }
+
+    [style*='gap: "80px"'] {
+      gap: 40px !important;
+    }
+
+    [style*='gap: "60px"'] {
+      gap: 30px !important;
+    }
+
+    [style*='gap: "50px"'] {
+      gap: 25px !important;
+    }
+
+    [style*='paddingBottom: "150px"'] {
+      padding-bottom: 80px !important;
+    }
+
+    [style*='paddingTop: "150px"'] {
+      padding-top: 80px !important;
+    }
+
+    [style*='paddingBottom: "130px"'] {
+      padding-bottom: 70px !important;
+    }
+
+    [style*='paddingTop: "130px"'] {
+      padding-top: 70px !important;
+    }
+
+    [style*='paddingBottom: "100px"'] {
+      padding-bottom: 50px !important;
+    }
+
+    [style*='paddingTop: "100px"'] {
+      padding-bottom: 50px !important;
+    }
+
+    /* Таймер секция */
+    [style*='marginTop: "195px"'] {
+      margin-top: 50px !important;
+    }
+
+    [style*='marginBottom: "60px"'] {
+      margin-bottom: 30px !important;
+    }
+
+    [style*='maxWidth: "600px"'] {
+      max-width: 100% !important;
+    }
+
+    /* Скрытие элементов на мобильных */
+    [style*='marginLeft: "150px"'],
+    [style*='marginRight: "150px"'] {
+      margin-left: 20px !important;
+      margin-right: 20px !important;
+    }
+  }
+
+  /* Cart positioning for mobile */
+  [style*='position: "fixed"'][style*='top: "20px"'][style*='right: "20px"'] {
+    position: fixed !important;
+    top: 15px !important;
+    right: 15px !important;
+    z-index: 1002 !important;
+  }
+
+  /* Дополнительная адаптивность для маленьких экранов */
+  @media (max-width: 480px) {
+    [style*='fontSize: "36px"'] {
+      font-size: 24px !important;
+      line-height: 30px !important;
+    }
+
+    [style*='fontSize: "28px"'] {
+      font-size: 20px !important;
+      line-height: 26px !important;
+    }
+
+    [style*='fontSize: "22px"'] {
+      font-size: 18px !important;
+      line-height: 24px !important;
+    }
+
+    [style*='fontSize: "32px"'] {
+      font-size: 20px !important;
+      line-height: 26px !important;
+    }
+
+    [style*='padding: "60px"'] {
+      padding: 30px !important;
+    }
+
+    [style*='padding: "40px"'] {
+      padding: 20px !important;
+    }
+
+    [style*='height: "400px"'] {
+      height: 250px !important;
+    }
+
+    [role="listitem"] [style*='height: "300px"'] {
+      height: 200px !important;
+    }
+  }
 }
